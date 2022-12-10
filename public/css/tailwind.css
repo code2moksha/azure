@@ -1,0 +1,1360 @@
+/*
+! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::-webkit-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mx-\[6px\] {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-\[\#0078d4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 120 212 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-\[\#6f9e02\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(111 158 2 / var(--tw-border-opacity));
+}
+
+.bg-\[\#0078d4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 120 212 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-\[\#89c402\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(137 196 2 / var(--tw-bg-opacity));
+}
+
+.p-\[9px\] {
+  padding: 9px;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#1a1a1f\] {
+  --tw-text-opacity: 1;
+  color: rgb(26 26 31 / var(--tw-text-opacity));
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+html {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  opacity: 1 !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4c4c51;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+  background-color: #1a1a1f;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.search_icon {
+  height: 14px;
+  width: 14px;
+}
+
+.search_icon.position {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.button {
+  width: 100%;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 540px) {
+  .button {
+    width: auto;
+  }
+}
+
+.azure-head-container {
+  position: relative;
+  height: 4.875rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .azure-head-container {
+    height: 3.4375rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .azure-head-container {
+    height: 3.375rem;
+  }
+}
+
+/* header-main */
+
+.azure-header-main {
+  margin-right: 4.0625rem;
+  margin-left: 4.0625rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.azure-header-main h2 {
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+/*mr-[4.0625rem] ml-[4.0625rem]*/
+
+/*navigation*/
+
+#azure-nav-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-bottom-width: 1px;
+}
+
+.azure-nav-l1 {
+  margin-right: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/*navigation-identity*/
+
+.azure-identity {
+  display: flex;
+  align-items: center;
+}
+
+.azure-nav-link-home {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/*navigation list item*/
+
+.azure-nav-l1_list {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.azure-nav-l1_list-item {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.azure-nav-l1_list-item.active {
+  background: #f4f5f6;
+}
+
+.azure-nav-l1_list-item > button {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.azure-nav-l1_list-item > button:hover {
+  text-decoration-line: underline;
+}
+
+.azure-nav-l1_list-item > button > img {
+  margin-left: 0.25rem;
+  margin-top: 5px;
+  height: 0.5rem;
+  width: 0.5rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.azure-nav-l1_list-item.active .button-expand {
+  display: block;
+}
+
+.azure-nav-l1_list-item.active > button {
+  background-color: #f4f5f6;
+  border: dashed 1px #000;
+}
+
+.azure-nav-l1_list-item.active > button > img {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/*Dropdown Expand*/
+
+.button-expand {
+  position: absolute;
+  top: 53px;
+  left: 0px;
+  margin-right: 4.0625rem;
+  margin-left: 4.0625rem;
+  display: none;
+  width: 1310px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 246 / var(--tw-bg-opacity));
+}
+
+.tablet-button-expand {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.tablet-button-expand-group {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.tablet-button-expand_list {
+  display: grid;
+  grid-auto-columns: minmax(50ch,50%);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  row-gap: 1.25rem;
+}
+
+.tablet-button-expand.price {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.tablet-button-expand.resources {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.tablet-button-expand__list li {
+  margin-top: 1.25rem;
+}
+
+/*Navigation Products tab*/
+
+.products-search-form {
+  margin-top: 1.25rem;
+  margin-left: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.navigation-product-view-all {
+  margin-top: 0.5rem;
+  text-decoration-line: underline;
+}
+
+.navigation-product-view-all:hover {
+  cursor: pointer;
+}
+
+.azure-nav-search-form.tab {
+  margin-right: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.azure-nav-search-form__search-field {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.azure-nav-search-form__search-field > input[type="text"] {
+  height: 2rem;
+  width: 300px;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 246 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.azure-nav-search-form__search-field > input[type="text"]:focus {
+  border-width: 0px;
+  outline-style: dashed;
+  outline-color: #000;
+}
+
+.button_search_close {
+  height: 1.5rem;
+  width: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button_search_close.position {
+  position: absolute;
+  left: 5rem;
+  margin-top: 3px;
+  margin-left: 14.5rem;
+}
+
+.result {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.results-display > p {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.azure-nav-tabs-container {
+  display: flex;
+  height: 622px;
+  padding: 1.25rem;
+}
+
+.azure-nav-tabs {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.azure-nav-tabs__tablist {
+  position: relative;
+  top: 1.25rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  height: calc(100% - 40px);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.azure-nav-tabs__tablist li {
+  height: 2.5rem;
+  width: 220px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.azure-nav-tabs__tablist li:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.azure-nav-tabs__tablist > li.active:focus {
+  outline-style: dashed;
+  outline-color: #000;
+}
+
+.azure-nav-tabs__tablist li button {
+  margin: 1px;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.azure-nav-tabs__tablist li button:hover {
+  text-decoration-line: underline;
+}
+
+.azure-nav-tabs-content {
+  margin-left: 2.5rem;
+}
+
+.tab-buttons.active {
+  border-width: 1px;
+  border-style: dashed;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.azure-nav-tabs-content__panel {
+  display: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+}
+
+.azure-nav-tabs-content__panel_heading {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.azure-nav-tabs-content__panel_heading h2 {
+  margin-bottom: 9px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  line-height: 1;
+}
+
+.azure-nav-tabs-content__panel_heading p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.azure-nav-tabs-content__panel.active {
+  display: block;
+}
+
+.azure-nav-expand__list__gutters {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.azure-nav-expand__list__gutters li {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+}
+
+.icon-size2 {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Main Container*/
+
+.wa-container {
+  width: 100%;
+}
+
+.hero-image-background {
+  height: 650px;
+  width: 100%;
+  background-image: url('../hero-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 72px;
+  padding-bottom: 280px;
+}
+
+.row {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.hero-content-grid {
+  display: grid;
+  width: 50%;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.super-text {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(26 26 31 / var(--tw-text-opacity));
+}
+
+.body-text {
+  margin-top: 0.75rem;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  --tw-text-opacity: 1;
+  color: rgb(76 76 81 / var(--tw-text-opacity));
+}
+
+.list-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: auto;
+}
+
+/* Navigation Search Form*/
+
+.azure-nav-search-form {
+  margin-bottom: 0.5rem;
+}
+
+.search-form-field {
+  margin-right: 1.5rem;
+  display: flex;
+  width: 120px;
+}
+
+.search-form-field.expand {
+  top: -1rem;
+  margin-right: 1.5rem;
+  display: flex;
+  width: 600px;
+}
+
+.nav-search-field {
+  min-height: 32px;
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(116 116 121 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 1.5rem;
+  font-size: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(76 76 81 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.nav-search-button {
+  position: relative;
+  right: 21px;
+  top: 7px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.nav-search-button.expand {
+  position: relative;
+  right: 2.75rem;
+  top: 7px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.nav-close-button {
+  display: none;
+}
+
+.nav-close-button.expand {
+  position: relative;
+  right: 42px;
+  top: -1px;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+}
+
+/*
+.azure-nav-search-form {
+	@apply flex relative mr-6 mb-0 w-[120px] h-8 z-[1];
+}
+.azure-nav-search-form.expand {
+	@apply flex relative mr-6 mb-0 w-[120px] h-0 z-[1];
+}
+.search-form-field {
+	@apply flex justify-start relative  transition-width ease-in duration-200;
+}
+.search-form-field.expand {
+	@apply flex  absolute -top-4 right-0 w-[600px] max-w-[calc(100vw_-_24px)];
+}
+.nav-search-field {
+	@apply relative outline-none focus:border-dashed w-[120px] active:bg-slate-600  h-8 py-[5px] pl-3 pr-6 bg-[#f8f9fa] rounded border border-[#747479] text-[13px] text-[#4c4c51];
+}
+.nav-search-field.expand {
+	@apply w-[600px];
+}
+.nav-search-button {
+	@apply absolute top-[7px] right-2 w-[15px] h-[15px];
+}
+.nav-search-button.expand {
+	@apply w-[600px] h-[15px] -top-4;
+}
+.nav-close-button.expand {
+	@apply block;
+}
+*/
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-\[\#006abb\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 106 187 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:underline-offset-1:hover {
+  text-underline-offset: 1px;
+}
+
+.focus\:outline-dashed:focus {
+  outline-style: dashed;
+}
+
+.focus\:outline-black:focus {
+  outline-color: #000;
+}
+
+.active\:border-dashed:active {
+  border-style: dashed;
+}
+
+.active\:outline-dashed:active {
+  outline-style: dashed;
+}
+
+.active\:outline-black:active {
+  outline-color: #000;
+}

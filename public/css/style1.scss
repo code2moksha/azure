@@ -1,0 +1,100 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+*,
+:before,
+:after {
+	box-sizing: inherit;
+}
+html {
+	overflow-y: scroll;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	opacity: 1 !important;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #4c4c51;
+	font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+}
+body {
+	background-color: #1a1a1f;
+	margin: 0;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+.button {
+	@apply w-full font-sego xs:w-auto;
+}
+.azure-head-container {
+	@apply h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] relative bg-white;
+}
+/* header-main */
+.azure-header-main {
+	@apply flex items-center max-w-7xl mr-16 ml-16;
+}
+.azure-header-main a {
+	@apply bg-transparent text-current decoration-0;
+}
+.azure-header-main ul {
+	@apply list-none m-0;
+}
+.azure-header-main [type="button"] {
+	@apply bg-transparent border-0 text-left;
+}
+.azure-header-main button {
+	@apply font-sego text-inherit cursor-pointer;
+}
+/*navigation*/
+.azure-nav-container {
+	@apply flex items-center w-full relative border-b border-b-transparent overflow-x-auto md:flex md:items-center;
+}
+.azure-nav-l1 {
+	@apply md:bg-inherit md:border-0 md:px-3 md:w-auto md:mr-auto md:flex md:items-center;
+}
+
+/*Navigation Identity*/
+.azure-identity {
+	@apply md:flex md:items-center lg1:ml-6;
+}
+.azure-identity a {
+	@apply md:flex md:items-center md:underline-offset-1;
+}
+.azure-nav-link-home {
+	@apply md:text-lg md:font-semibold lg1:ml-6;
+}
+
+/*Navigation list items*/
+.azure-nav-l1_list {
+	@apply m-0 p-0 md:bg-inherit md:inline-flex md:ml-3 lg1:ml-6;
+}
+.azure-nav-l1_list-item {
+	@apply text-sm flex items-center m-0 leading-none;
+}
+
+.azure-nav-l1_list-item button {
+	@apply md:underline-offset-1;
+}
+.azure-nav-btn-expand {
+	@apply flex items-center justify-between font-normal md:text-[13px] md:px-2 md:py-5;
+}
+.azure-nav-btn-expand::after {
+	@apply content-['\005e'];
+}
+.azure-nav--display-flex-desktop {
+	@apply lg1:flex lg1:items-center;
+}
+#azure-nav-search-form {
+	@apply relative mr-3 w-[7.5rem] z-[1] xl:mr-6;
+}
+/*48em md
+  76.5em lg-1
+*/

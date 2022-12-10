@@ -1,0 +1,1224 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>tailwind css</title>
+		<link rel="stylesheet" href="./css/tailwind.css" />
+	</head>
+	<body>
+		<div class="azure-head-container">
+			<header id="azure-header" class="azure-header-main">
+				<div class="azure-nav-header-mobile"></div>
+				<!-- for mobile -->
+				<div id="azure-nav-container">
+					<nav class="azure-nav-l1">
+						<div class="azure-nav-mobile"></div>
+						<!-- for mobile-->
+						<div class="azure-identity">
+							<a class="azure-nav-link-microsoft">
+								<img src="microsoft_logo.svg" class="h-6" alt="logo"
+							/></a>
+							<a class="azure-nav-link-home">Azure</a>
+						</div>
+						<ul class="azure-nav-l1_list" id="dropdown">
+							<li id="dropdown-explore" class="azure-nav-l1_list-item">
+								<button type="button">
+									Explore
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div class="button-expand" onclick="">
+									<div class="mobile-button-expand"></div>
+									<!--for mobile-->
+									<div class="tablet-button-expand">
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">
+												Explore Azure
+											</h2>
+											<ul class="tablet-button-expand_list">
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Get to know Azure</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Discover secure, future-ready cloud solutions –
+														on-premises, hybrid, multicloud or at the edge
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Global infrastructure</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Learn about sustainable, trusted cloud
+														infrastructure with more regions than any other
+														provider
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Cloud economics</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Build your business case for the cloud with key
+														financial and technical guidance from Azure
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Customer enablement</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Plan a clear path forwards for your cloud journey
+														with proven tools, guidance and resources
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Customer stories</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														See examples of innovation from successful companies
+														of all sizes and from all industries
+													</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="dropdown-products" class="azure-nav-l1_list-item">
+								<button type="button">
+									Products
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div class="button-expand">
+									<div class="products-search-form">
+										<form class="azure-nav-search-form tab">
+											<div class="azure-nav-search-form__search-field">
+												<input type="text" placeholder="Search all products" />
+												<span
+													><img
+														class="search_icon position"
+														src="searchIcon.png"
+												/></span>
+												<button class="button_search_close position">
+													<img src="search_close.png" />
+												</button>
+											</div>
+											<span class="result">Results will display instantly</span>
+										</form>
+										<a class="navigation-product-view-all"
+											>View all products (200+)</a
+										>
+									</div>
+									<div hidden class="results-display">
+										<p>
+											<strong
+												>No results found. Please try broadening your
+												search.</strong
+											>
+										</p>
+									</div>
+									<div class="azure-nav-tabs-container">
+										<div class="azure-nav-tabs">
+											<div class="azure-nav-expand-heading-mobile"></div>
+											<!--mobile-->
+
+											<ul class="azure-nav-tabs__tablist">
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="popular-navtab"
+													>
+														Featured
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="ai-machine-learning-navtab"
+													>
+														AI + Machine Learning
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="analytics-navtab"
+													>
+														Analytics
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="compute-navtab"
+													>
+														Compute
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="containers-navtab"
+													>
+														Containers
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="databases-navtab"
+													>
+														Databases
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="devops-navtab"
+													>
+														DevOps
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="developer-tools-navtab"
+													>
+														Developer Tools
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="hybrid-multicloud-navtab"
+													>
+														Hybrid + multicloud
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="identity-navtab"
+													>
+														Identity
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="integration-navtab"
+													>
+														Integration
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="media-navtab"
+													>
+														Internet of Things
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="migration-navtab"
+													>
+														Management and Governance
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="mixed-reality-navtab"
+													>
+														Media
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="mobile-navtab"
+													>
+														Migration
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="networking-navtab"
+													>
+														Mixed Reality
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="security-navtab"
+													>
+														Mobile
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="storage-navtab"
+													>
+														Networking
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="web-navtab"
+													>
+														Security
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button
+														class="azure-nav-tabs__tab"
+														aria-controls="windows-virtual-desktop-navtab"
+													>
+														Storage
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button class="azure-nav-tabs__tab" aria-controls="">
+														Web
+													</button>
+												</li>
+												<li class="tab-buttons">
+													<button class="azure-nav-tabs__tab" aria-controls="">
+														Windows Virtual Desktop
+													</button>
+												</li>
+											</ul>
+										</div>
+										<div class="azure-nav-tabs-content">
+											<div
+												id="popular-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+										     <h2>Featured</h2>				
+                         <p>Explore some of the most popular Azure products</p>								
+                        </div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list__gutters">
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li>
+                          <li class="azure-nav-expand__list-card"><img class="icon icon-size2" src="virtual-machines.svg">
+                            <a>Virtual Machines</a>
+                            <p>Provision Windows and Linux virtual machines in seconds</p></li></ul>
+                        </div>
+											</div>
+											<div
+												id="ai-machine-learning-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+												<h2>	AI + Machine Learning</h2>
+                        <p>Create the next generation of applications using artificial intelligence capabilities for any developer and any scenario.</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="analytics-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+											  <h2>Analytics</h2>
+                        <p>Gather, store, process, analyse and visualise data of any variety, volume or velocity.</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="compute-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+									      <h2>Compute</h2>					
+                        <p>Access cloud compute capacity and scale on demand – and only pay for the resources you use.</p>						
+                        </div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="containers-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+												<h2>	Containers</h2>
+                        <p>Develop and manage your containerised apps faster with integrated tools</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="databases-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+											   <h2>		Databases</h2>
+                         <p>Support rapid growth and innovate faster with secure, enterprise-grade and fully managed database services.</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="devops-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+								         <h2>DevOps</h2>						
+                         <p>Deliver innovation faster with simple, reliable tools for continuous delivery</p>				
+                        </div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="developer-tools-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+												  <h2>DeveloperTools</h2> 
+                          <p>Build, manage and continuously deliver cloud applications – using any platform or language</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="hybrid-multicloud-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+												<div class="azure-nav-tabs-content__panel_heading">
+												<h2>	Hybrid + multicloud</h2>
+                        <p>Get Azure innovation everywhere—bring the agility and innovation of cloud computing to your on-premises workloads</p>
+												</div>
+												<div class="azure-nav-tabs-content__panel_content">
+                          <ul class="azure-nav-expand__list--gutters">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li></ul>
+                        </div>
+											</div>
+											<div
+												id="identity-navtab"
+												class="azure-nav-tabs-content__panel"
+											>	<div class="azure-nav-tabs-content__panel_heading">
+                         <h2>Identity</h2>
+                         <p>Manage user identities and access to protect against advanced threats across devices, data, apps and infrastructure</p>                    </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="integration-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div
+                      id="identity-navtab"
+                      class="azure-nav-tabs-content__panel"
+                    >	<div class="azure-nav-tabs-content__panel_heading">
+                       <h2>integration-navtab</h2>
+                       <p>Seamlessly integrate on-premises and cloud-based applications, data and processes across your enterprise.</p>
+                    </div>
+                    <div class="azure-nav-tabs-content__panel_content">
+                      <ul class="azure-nav-expand__list--gutters">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li></ul>
+                    </div>
+											</div>
+											<div
+												id="iot-navtab"
+												class="azure-nav-tabs-content__panel"
+											>	<div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Internet of Things</h2>
+                        <p>Bring IoT to any device and any platform, without changing your infrastructure</p>
+                      </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+											<div
+												id="management-tools-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Management and Governance</h2>
+                        <p>Simplify, automate and optimise the management and compliance of your cloud resources</p>
+                      </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="media-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                         <h2>Media</h2>  
+                         <p>Deliver high-quality video content anywhere, at any time and on any device</p>                  </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+											<div
+												id="migration-navtab"
+												class="azure-nav-tabs-content__panel"
+											>
+                        <div class="azure-nav-tabs-content__panel_heading">
+                         <h2>Migration</h2> 
+                         <p>Simplify and accelerate your migration to the cloud with guidance, tools and resources</p>
+                        </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="mixed-reality-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Mixed Reality</h2>
+                        <p>Blend your physical and digital worlds to create immersive, collaborative experiences</p>
+                      </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="mobile-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Mobile</h2> 
+                        <p>Build and deploy cross-platform and native apps for any mobile device</p>                  
+                       </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="networking-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                       <h2> Networking</h2>
+                       <p>Connect cloud and on-premises infrastructure and services, to provide your customers and users with the best possible experience.</p>
+                      </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+											<div
+												id="security-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Security</h2>  
+                        <p>Protect your enterprise from advanced threats across hybrid cloud workloads</p>                   </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+											
+											</div>
+											<div
+												id="storage-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                         <h2>Storage</h2>
+                         <p>Get secure, massively scalable cloud storage for your data, apps and workloads.</p>                    </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+											<div
+												id="web-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                         <h2>Web</h2>    
+                         <p>Build, deploy and scale powerful web applications quickly and efficiently</p>       
+                       </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+											<div
+												id="windows-virtual-desktop-navtab"
+												class="azure-nav-tabs-content__panel"
+											><div class="azure-nav-tabs-content__panel_heading">
+                        <h2>Windows Virtual Desktop</h2>
+                        <p>The best virtual desktop experience – delivered on Azure</p>
+                      </div>
+                      <div class="azure-nav-tabs-content__panel_content">
+                        <ul class="azure-nav-expand__list--gutters">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li></ul>
+                      </div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="dropdown-solutions" class="azure-nav-l1_list-item">
+								<button type="button">
+									Solutions
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div hidden class="button-expand">HI</div>
+							</li>
+							<li id="dropdown-pricing" class="azure-nav-l1_list-item">
+								<button type="button">
+									Pricing
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div class="button-expand" onclick="">
+									<div class="mobile-button-expand"></div>
+									<!--for mobile-->
+									<div class="tablet-button-expand price">
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">How to buy</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Azure pricing</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Get the best value at every stage of your cloud
+														journey
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Free Azure services</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														See which services offer free monthly amounts
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Pay as you go</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Only pay for what you use, plus get free services
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Flexible purchase options</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Find the options that works best for you
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Azure benefits and incentives</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Explore special offers, benefits and incentives
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">
+												Pricing tools and resources
+											</h2>
+											<ul class="tablet-button-expand__list">
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Pricing calculator</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Estimate the costs for Azure products and services
+													</p>
+												</li>
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>TCO calculator</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Estimate your total cost of ownership and cost
+														savings
+													</p>
+												</li>
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Optimise your costs</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Learn how to manage and optimise your cloud spend
+													</p>
+												</li>
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Cloud economics</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Understand the value and economics of moving to
+														Azure
+													</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="dropdown-resources" class="azure-nav-l1_list-item">
+								<button type="button">
+									Partners
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div class="button-expand" onclick="">
+									<div class="mobile-button-expand"></div>
+									<div class="tablet-button-expand price">
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">
+												Find a partner
+											</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Azure Marketplace</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Find, try and buy trusted apps and services
+													</p>
+												</li>
+												<li>
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Find a partner</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Get up and running in the cloud with help from an
+														experienced partner
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">
+												Becoming a partner
+											</h2>
+											<ul class="tablet-button-expand__list">
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Azure partner zone</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Estimate the costs for Azure products and services
+													</p>
+												</li>
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Azure technology partners</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Estimate your total cost of ownership and cost
+														savings
+													</p>
+												</li>
+												<li class="mt-1.5">
+													<a
+														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+														>Publish your app</a
+													>
+													<p class="mt-1.5 text-[13px] leading-normal">
+														Reach more customers – sell directly to over 4M
+														users a month in the commercial marketplaces
+													</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="dropdown-partners" class="azure-nav-l1_list-item">
+								<button type="button">
+									Resources
+									<img class="arrow" src="down-arrow.png" />
+								</button>
+								<div class="button-expand">
+									<div class="mobile-button-expand"></div>
+									<div class="tablet-button-expand resources">
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">Learning</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Get started with Azure</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Training and certifications</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Customer stories</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Analyst reports, white papers and e-books</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Videos</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Learn more about cloud computing</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">
+												Technical resources
+											</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Documentation</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Developer resources</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Quickstart templates</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">Community</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Developer community</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Students</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Developer stories</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="tablet-button-expand-group">
+											<h2 class="tablet-button-expand_heading">Community</h2>
+											<ul class="tablet-button-expand__list">
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>What’s new</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Updates</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Blog</a
+													>
+												</li>
+												<li>
+													<a
+														class="font-normal leading-none no-underline hover:cursor-pointer hover:underline"
+														>Events and Webinars</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<form id="azure-nav-search-form" class="azure-nav-search-form">
+					<div id="search-form-field" class="search-form-field">
+              	<input id="nav-search-field" type="text" placeholder="Search" class="nav-search-field">
+							  <button id="nav-search-button" class="nav-search-button"><img src="searchicon.png"></button>
+							 <button id="nav-search-close" class="nav-close-button"><img src="search_close.png"></button>
+						</div>
+					</form> 
+					<nav class="flex items-center">
+							<div>
+								<ul class="flex items-center">
+								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
+								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Support</a></li>
+								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Contact Sales</a></li>
+								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="inline-block bg-[#89c402] border   active:border-dashed border-[#6f9e02] rounded font-semibold text-xs text-[#1a1a1f] text-[13px] text-center p-[9px] mx-[6px] hover:underline hover:cursor-pointer">Free account</a></li>
+								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></li></ul>
+							</div>
+					</nav>
+				</div>
+			</header>
+		</div>
+    <main class="wa-container">
+      <div class="hero-image-background">
+        <div class="hero-content">
+					<div class="row">
+						<div class="hero-content-grid">
+							<div><h1 class="super-text">Do more with less—<br>On Azure</h1></div>
+							<div><p class="body-text">Migrate, modernise, and maximise
+								 your cloud and on-premises investments. 
+								Get started now with pay-as-you-go pricing. There's no upfront
+								 commitment—cancel anytime. 
+								Or try Azure free for up to 30 days.</p></div>
+							<div class="hero-content-grid-row3"><ul class="list-horizontal">
+								<li class="mt-3 mr-6"><a class="w-auto hover:cursor-pointer bg-[#0078d4] hover:bg-[#006abb] hover:underline border border-solid border-[#0078d4] rounded px-4 py-[10px] text-white text-sm font-semibold ">Get started</a></li>
+							  <li class=" mt-3 "><a class="w-auto hover:cursor-pointer border border-black  px-4 py-[10px] bg-transparent text-black rounded text-sm font-semibold transition-colors duration-200 ease-in-out hover:underline hover:bg-black hover:text-white">Try Azure for free</a></li>
+							</ul></div>
+						</div>
+					</div>
+				</div>
+      </div>
+
+    </main>
+		<script src="utilites.js"></script>
+	</body>
+</html>
