@@ -53,7 +53,7 @@ body {
 /*mr-[4.0625rem] ml-[4.0625rem]*/
 /*navigation*/
 #azure-nav-container {
-	@apply flex items-center border-b h-full w-full;
+	@apply flex items-center border-b h-full w-full justify-between;
 }
 .azure-nav-l1 {
 	@apply flex items-center h-full mr-auto px-3;
@@ -229,46 +229,17 @@ body {
 	@apply flex w-[600px] mr-6 -top-4;
 }
 .nav-search-field {
-	@apply outline-none border border-[#747479] rounded min-h-[32px] w-full bg-[#f8f9fa] text-[13px] text-[#4c4c51] pl-3 pr-6;
+	@apply outline-none border border-[#747479] rounded focus:border focus:border-black min-h-[32px] w-full bg-[#f8f9fa] text-[13px] text-[#4c4c51] pl-3 pr-6;
 }
 .nav-search-button {
-	@apply relative w-4 h-4 right-[21px] top-[7px];
+	@apply relative w-4 h-4 right-[21px] top-[7px] -translate-x-2;
 }
 .nav-search-button.expand {
-	@apply relative w-4 h-4 right-11 top-[7px];
+	@apply relative w-4 h-4 right-11 top-[7px] -translate-x-2;
 }
 .nav-close-button {
-	@apply hidden;
+	@apply hidden opacity-0 transition-opacity duration-200;
 }
 .nav-close-button.expand {
-	@apply block relative w-8 h-8 right-[42px] -top-[1px];
+	@apply block relative opacity-100 w-8 h-8 right-[42px] -top-[1px] transition-opacity duration-200;
 }
-/*
-.azure-nav-search-form {
-	@apply flex relative mr-6 mb-0 w-[120px] h-8 z-[1];
-}
-.azure-nav-search-form.expand {
-	@apply flex relative mr-6 mb-0 w-[120px] h-0 z-[1];
-}
-.search-form-field {
-	@apply flex justify-start relative  transition-width ease-in duration-200;
-}
-.search-form-field.expand {
-	@apply flex  absolute -top-4 right-0 w-[600px] max-w-[calc(100vw_-_24px)];
-}
-.nav-search-field {
-	@apply relative outline-none focus:border-dashed w-[120px] active:bg-slate-600  h-8 py-[5px] pl-3 pr-6 bg-[#f8f9fa] rounded border border-[#747479] text-[13px] text-[#4c4c51];
-}
-.nav-search-field.expand {
-	@apply w-[600px];
-}
-.nav-search-button {
-	@apply absolute top-[7px] right-2 w-[15px] h-[15px];
-}
-.nav-search-button.expand {
-	@apply w-[600px] h-[15px] -top-4;
-}
-.nav-close-button.expand {
-	@apply block;
-}
-*/

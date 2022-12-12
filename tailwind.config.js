@@ -20,6 +20,9 @@ module.exports = {
 			transitionProperty: {
 				width: "width",
 			},
+			backgroundImage: {
+				section1: "url('../ez-optimize-desktop.jpeg')",
+			},
 		},
 	},
 	plugins: [],

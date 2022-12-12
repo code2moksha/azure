@@ -557,6 +557,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-\[7\%\] {
+  bottom: 7%;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.-bottom-48 {
+  bottom: -12rem;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -564,6 +596,11 @@ video {
 .mx-\[6px\] {
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.mx-\[65px\] {
+  margin-left: 65px;
+  margin-right: 65px;
 }
 
 .mt-1\.5 {
@@ -582,12 +619,24 @@ video {
   margin-right: 1.5rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -598,8 +647,29 @@ video {
   height: 1.5rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
 .w-auto {
   width: auto;
+}
+
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
@@ -618,6 +688,11 @@ video {
   border-style: solid;
 }
 
+.border-\[\#6f9e02\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(111 158 2 / var(--tw-border-opacity));
+}
+
 .border-\[\#0078d4\] {
   --tw-border-opacity: 1;
   border-color: rgb(0 120 212 / var(--tw-border-opacity));
@@ -628,9 +703,9 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-\[\#6f9e02\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(111 158 2 / var(--tw-border-opacity));
+.bg-\[\#89c402\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(137 196 2 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#0078d4\] {
@@ -642,13 +717,39 @@ video {
   background-color: transparent;
 }
 
-.bg-\[\#89c402\] {
+.bg-\[\#fff\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(137 196 2 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-section1 {
+  background-image: url('../ez-optimize-desktop.jpeg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-\[9px\] {
   padding: 9px;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .px-4 {
@@ -661,14 +762,14 @@ video {
   padding-bottom: 10px;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .text-center {
@@ -689,6 +790,11 @@ video {
   line-height: 1rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -705,6 +811,15 @@ video {
   line-height: 1.5;
 }
 
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
+
+.text-\[\#1a1a1f\] {
+  --tw-text-opacity: 1;
+  color: rgb(26 26 31 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -713,11 +828,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#1a1a1f\] {
-  --tw-text-opacity: 1;
-  color: rgb(26 26 31 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -833,6 +943,7 @@ body {
   height: 100%;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
   border-bottom-width: 1px;
 }
 
@@ -1253,12 +1364,20 @@ body {
   outline-offset: 2px;
 }
 
+.nav-search-field:focus {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .nav-search-button {
   position: relative;
   right: 21px;
   top: 7px;
   height: 1rem;
   width: 1rem;
+  --tw-translate-x: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .nav-search-button.expand {
@@ -1267,10 +1386,16 @@ body {
   top: 7px;
   height: 1rem;
   width: 1rem;
+  --tw-translate-x: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .nav-close-button {
   display: none;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 
 .nav-close-button.expand {
@@ -1280,37 +1405,11 @@ body {
   display: block;
   height: 2rem;
   width: 2rem;
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
-
-/*
-.azure-nav-search-form {
-	@apply flex relative mr-6 mb-0 w-[120px] h-8 z-[1];
-}
-.azure-nav-search-form.expand {
-	@apply flex relative mr-6 mb-0 w-[120px] h-0 z-[1];
-}
-.search-form-field {
-	@apply flex justify-start relative  transition-width ease-in duration-200;
-}
-.search-form-field.expand {
-	@apply flex  absolute -top-4 right-0 w-[600px] max-w-[calc(100vw_-_24px)];
-}
-.nav-search-field {
-	@apply relative outline-none focus:border-dashed w-[120px] active:bg-slate-600  h-8 py-[5px] pl-3 pr-6 bg-[#f8f9fa] rounded border border-[#747479] text-[13px] text-[#4c4c51];
-}
-.nav-search-field.expand {
-	@apply w-[600px];
-}
-.nav-search-button {
-	@apply absolute top-[7px] right-2 w-[15px] h-[15px];
-}
-.nav-search-button.expand {
-	@apply w-[600px] h-[15px] -top-4;
-}
-.nav-close-button.expand {
-	@apply block;
-}
-*/
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
@@ -1335,26 +1434,6 @@ body {
   text-decoration-line: underline;
 }
 
-.hover\:underline-offset-1:hover {
-  text-underline-offset: 1px;
-}
-
-.focus\:outline-dashed:focus {
-  outline-style: dashed;
-}
-
-.focus\:outline-black:focus {
-  outline-color: #000;
-}
-
 .active\:border-dashed:active {
   border-style: dashed;
-}
-
-.active\:outline-dashed:active {
-  outline-style: dashed;
-}
-
-.active\:outline-black:active {
-  outline-color: #000;
 }

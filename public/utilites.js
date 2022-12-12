@@ -4,7 +4,12 @@ const productTabs = document.querySelectorAll(
 	".azure-nav-tabs__tablist li button"
 );
 const navsearch = document.querySelector("#nav-search-field");
+
 const closeBtn = document.getElementById("nav-search-close");
+const searchBtn = document.getElementById("nav-search-button");
+const divSearch = document.getElementById("search-form-field");
+
+const dropDown = document.getElementById("dropdown");
 const activeClassName = "active";
 let lastActiveNav;
 let lastActivePanel;
@@ -12,6 +17,7 @@ let lastActivePanel;
 document.addEventListener("click", (e) => {
 	if (lastActiveNav && !lastActiveNav.contains(e.target)) {
 		lastActiveNav.classList.remove(activeClassName);
+		navsearch.style.borderStyle = "solid";
 	}
 });
 /* Product tab click events*/
@@ -61,21 +67,26 @@ navMenus.forEach((menu) => {
 });
 /*Navigation bar search*/
 navsearch.addEventListener("click", (e) => {
-	//console.log(e.target.classList);
-	const searchForm = document.getElementById("azure-nav-search-form");
-	const dropDown = document.getElementById("dropdown");
-	const searchBtn = document.getElementById("nav-search-button");
-	const divSearch = document.getElementById("search-form-field");
+	//e.stopPropagation();
+	e.preventDefault();
+
+	// const searchForm = document.getElementById("azure-nav-search-form");
 
 	dropDown.style.display = "none";
 	//e.target.classList.add("expand");
-	searchForm.classList.add("expand");
+	// searchForm.classList.add("expand");
 	closeBtn.classList.add("expand");
 	searchBtn.classList.add("expand");
 	divSearch.classList.add("expand");
 });
 closeBtn.addEventListener("click", (e) => {
+	//e.stopPropagation();
+	e.preventDefault();
+
 	closeBtn.classList.remove("expand");
 	searchBtn.classList.remove("expand");
 	divSearch.classList.remove("expand");
+	navsearch.focus();
+	navsearch.style.borderStyle = "dashed";
+	dropDown.style.display = "flex";
 });
