@@ -23,6 +23,11 @@ module.exports = {
 			backgroundImage: {
 				section1: "url('../ez-optimize-desktop.jpeg')",
 			},
+			boxShadow: {
+				card1: "0 2px 5px rgb(0 0 0 / 14%)",
+				card2: "0 5px 10px rgb(0 0 0 / 14%)",
+				header: "0 0 8px -1px rgb(0 0 0 / 25%)",
+			},
 		},
 	},
 	plugins: [],

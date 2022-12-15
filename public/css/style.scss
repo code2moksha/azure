@@ -41,8 +41,9 @@ body {
 	@apply w-full font-sego xs:w-auto;
 }
 .azure-head-container {
-	@apply h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] relative bg-white;
+	@apply border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] relative bg-white;
 }
+
 /* header-main */
 .azure-header-main {
 	@apply flex items-center h-full mr-[4.0625rem] ml-[4.0625rem];
@@ -51,9 +52,23 @@ body {
 	@apply text-xs font-semibold mb-5;
 }
 /*mr-[4.0625rem] ml-[4.0625rem]*/
+
+/*header-main-mini
+.head-container-mini {
+ 	@apply fixed -translate-y-full transition-transform z-0 duration-[180ms] ease-in border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
+ }*/
+.head-container-mini {
+	@apply hidden fixed top-0 opacity-0 w-full transition-all -translate-y-full  z-0 duration-[1000ms] ease-in-out border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
+}
+.head-container-mini.active {
+	@apply block fixed top-0 opacity-100 w-full translate-y-0 z-10 border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
+}
+/*.head-container-mini.active {
+	@apply flex sticky opacity-100 translate-y-0 z-10;
+}*/
 /*navigation*/
 #azure-nav-container {
-	@apply flex items-center border-b h-full w-full justify-between;
+	@apply flex items-center  h-full w-full justify-between;
 }
 .azure-nav-l1 {
 	@apply flex items-center h-full mr-auto px-3;

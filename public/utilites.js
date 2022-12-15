@@ -90,3 +90,18 @@ closeBtn.addEventListener("click", (e) => {
 	navsearch.style.borderStyle = "dashed";
 	dropDown.style.display = "flex";
 });
+
+//Header scroll
+window.addEventListener("scroll", (e) => {
+	const mini_header = document.getElementById("head-container-mini");
+	// console.log(window.scrollY);
+	// console.log(window.innerHeight);
+	if (window.scrollY > 700) {
+		console.log("show");
+		mini_header.classList.add("active");
+	}
+	if (window.scrollY < 700) {
+		console.log("hide");
+		mini_header.classList.remove("active");
+	}
+});
