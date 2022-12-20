@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./public/index.html"],
+	important: true,
 	theme: {
 		fontFamily: {
 			sego: ["Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
@@ -27,6 +28,7 @@ module.exports = {
 				card1: "0 2px 5px rgb(0 0 0 / 14%)",
 				card2: "0 5px 10px rgb(0 0 0 / 14%)",
 				header: "0 0 8px -1px rgb(0 0 0 / 25%)",
+				wrapper: "0 10px 20px rgb(0 0 0 / 14%)",
 			},
 		},
 	},

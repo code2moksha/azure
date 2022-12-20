@@ -53,19 +53,13 @@ body {
 }
 /*mr-[4.0625rem] ml-[4.0625rem]*/
 
-/*header-main-mini
-.head-container-mini {
- 	@apply fixed -translate-y-full transition-transform z-0 duration-[180ms] ease-in border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
- }*/
 .head-container-mini {
 	@apply hidden fixed top-0 opacity-0 w-full transition-all -translate-y-full  z-0 duration-[1000ms] ease-in-out border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
 }
 .head-container-mini.active {
 	@apply block fixed top-0 opacity-100 w-full translate-y-0 z-10 border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
 }
-/*.head-container-mini.active {
-	@apply flex sticky opacity-100 translate-y-0 z-10;
-}*/
+
 /*navigation*/
 #azure-nav-container {
 	@apply flex items-center  h-full w-full justify-between;
@@ -199,6 +193,12 @@ body {
 .azure-nav-tabs-content__panel.active {
 	@apply block;
 }
+.azure-nav-tabs-section-content__panel {
+	@apply hidden pt-0  bg-slate-50;
+}
+.azure-nav-tabs-section-content__panel.active {
+	@apply block;
+}
 .azure-nav-expand__list__gutters {
 	@apply grid grid-cols-4 mx-5;
 }
@@ -257,4 +257,40 @@ body {
 }
 .nav-close-button.expand {
 	@apply block relative opacity-100 w-8 h-8 right-[42px] -top-[1px] transition-opacity duration-200;
+}
+/*section2 */
+.section {
+	@apply p-0;
+}
+.azure-nav-tabs__sectiontablist {
+	@apply block w-60;
+}
+/* .azure-nav-tabs__sectiontablist li > button {
+// 	@apply block w-full no-underline bg-transparent text-[#4c4c51] text-left text-base -ml-[3px] p-3 hover:text-[#0062ad];
+// }*/
+.azure-nav-tabs__sectiontablist > .sectiontab-buttons {
+	@apply block  w-full -mx-[3px] mb-3 text-[#4c4c51] text-left text-base border-l-4 border-transparent  active:outline-offset-2 active:outline-2 active:outline-black;
+}
+.azure-nav-tabs__sectiontablist > .sectiontab-buttons > button {
+	@apply hover:underline hover:text-[#0062ad] w-full p-3 text-left;
+}
+.sectiontab-buttons.azure-nav-tabs__tab {
+	@apply focus-visible:outline-offset-2;
+}
+.azure-nav-tabs__sectiontablist > .sectiontab-buttons.active {
+	@apply outline-none   text-[#1a1a1f] font-extrabold  focus:outline-1 focus-visible:outline-offset-2 transition-all duration-200 delay-1000 ease-in-out;
+}
+.azure-nav-tabs__sectiontablist > .sectiontab-buttons.active > button {
+	@apply hover:underline hover:cursor-pointer hover:!text-[#1a1a1f] border-l-4 border-blue-900;
+}
+.azure-nav-tabs__tab:focus {
+	outline: 2px solid black;
+	outline-offset: 2px;
+}
+/* Customer Tabs*/
+.azure-customer-tabs-contentlist {
+	@apply flex flex-row flex-nowrap items-center content-center justify-center;
+}
+.azure-customer-tabs {
+	@apply w-[150px] m-3 align-middle bg-transparent hover:bg-[#eaebec];
 }
