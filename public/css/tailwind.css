@@ -581,10 +581,6 @@ video {
   left: -1.25rem !important;
 }
 
-.top-4 {
-  top: 1rem !important;
-}
-
 .top-\[450px\] {
   top: 450px !important;
 }
@@ -950,10 +946,6 @@ video {
   background-image: url('../ez-optimize-desktop.jpeg') !important;
 }
 
-.bg-\[url\(\'\.\/customer_image\/nhs-logo\.svg\'\)\] {
-  background-image: url('./customer_image/nhs-logo.svg') !important;
-}
-
 .bg-\[url\(\'\.\.\/customer_image\/nhs-logo\.svg\'\)\] {
   background-image: url('../customer_image/nhs-logo.svg') !important;
 }
@@ -972,10 +964,6 @@ video {
 
 .bg-\[url\(\'\.\.\/customer_image\/pepsico-logo\.svg\'\)\] {
   background-image: url('../customer_image/pepsico-logo.svg') !important;
-}
-
-.bg-\[url\(\'\.\.\/customer_imagege-logo\.svg\'\)\] {
-  background-image: url('../customer_imagege-logo.svg') !important;
 }
 
 .bg-\[url\(\'\.\.\/customer_image\/ge-logo\.svg\'\)\] {
@@ -1942,6 +1930,14 @@ body {
   background-color: rgb(234 235 236 / var(--tw-bg-opacity));
 }
 
+.azure-customer-tabs .active > button {
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 235 236 / var(--tw-bg-opacity));
+}
+
 /* .azure-customer-tabs-content_panel {
 // 	@apply bg-[url('../customer_image/')];
 // }*/
@@ -1959,6 +1955,41 @@ body {
   height: 100%;
   width: 100%;
   background-image: url('../customer_image/nhs-desktop.webp');
+  background-size: contain;
+}
+
+.azure-customer-tabs-content_panel > #forza_horizon_5 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../customer_image/forza5-desktop.webp');
+  background-size: contain;
+}
+
+.azure-customer-tabs-content_panel > #nba {
+  height: 100%;
+  width: 100%;
+  background-image: url('../customer_image/nba-desktop.webp');
+  background-size: cover;
+}
+
+.azure-customer-tabs-content_panel > #american_cancer_society {
+  height: 100%;
+  width: 100%;
+  background-image: url('../customer_image/acs-desktop.webp');
+  background-size: contain;
+}
+
+.azure-customer-tabs-content_panel > #pepsico {
+  height: 100%;
+  width: 100%;
+  background-image: url('../customer_image/pepsico-desktop.webp');
+  background-size: cover;
+}
+
+.azure-customer-tabs-content_panel > #ge_digital {
+  height: 100%;
+  width: 100%;
+  background-image: url('../customer_image/ge-desktop.webp');
   background-size: contain;
 }
 

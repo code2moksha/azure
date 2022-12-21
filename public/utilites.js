@@ -20,13 +20,20 @@ const activeClassName = "active";
 let lastActiveNav;
 let lastActivePanel;
 window.addEventListener("load", (e) => {
-	const defaultTab = document.querySelector(
-		".azure-nav-tabs__sectiontablist"
-	).firstElementChild;
-	const defaultTabPanel = document.getElementById("popular-secnavtab");
+	defaultTabComponent(".azure-nav-tabs__sectiontablist", "popular-secnavtab");
+	defaultTabComponent(".azure-customer-tabs-contentlist", "nhs");
+});
+
+//Default tab and panel activation
+const defaultTabComponent = function (tab, panel) {
+	const defaultTab = document.querySelector(tab).firstElementChild;
+	const defaultTabPanel = document.getElementById(panel);
+	console.log(defaultTab);
+	console.log(defaultTabPanel);
 	defaultTab.classList.add(activeClassName);
 	defaultTabPanel.classList.add(activeClassName);
-});
+};
+
 document.addEventListener("click", (e) => {
 	if (lastActiveNav && !lastActiveNav.contains(e.target)) {
 		lastActiveNav.classList.remove(activeClassName);

@@ -294,6 +294,9 @@ body {
 .azure-customer-tabs {
 	@apply w-[150px] m-3 align-middle bg-transparent hover:bg-[#eaebec];
 }
+.azure-customer-tabs .active > button {
+	@apply bg-[#eaebec] border-b-4 border-blue-600;
+}
 /* .azure-customer-tabs-content_panel {
 // 	@apply bg-[url('../customer_image/')];
 // }*/
@@ -305,6 +308,21 @@ body {
 }
 .azure-customer-tabs-content_panel > #nhs {
 	@apply h-full w-full bg-[url('../customer_image/nhs-desktop.webp')] bg-contain;
+}
+.azure-customer-tabs-content_panel > #forza_horizon_5 {
+	@apply h-full w-full bg-[url('../customer_image/forza5-desktop.webp')] bg-contain;
+}
+.azure-customer-tabs-content_panel > #nba {
+	@apply h-full w-full bg-[url('../customer_image/nba-desktop.webp')] bg-cover;
+}
+.azure-customer-tabs-content_panel > #american_cancer_society {
+	@apply h-full w-full bg-[url('../customer_image/acs-desktop.webp')] bg-contain;
+}
+.azure-customer-tabs-content_panel > #pepsico {
+	@apply h-full w-full bg-[url('../customer_image/pepsico-desktop.webp')] bg-cover;
+}
+.azure-customer-tabs-content_panel > #ge_digital {
+	@apply h-full w-full bg-[url('../customer_image/ge-desktop.webp')] bg-contain;
 }
 .azure-customer-tabs-content_items {
 	@apply hidden;
