@@ -294,3 +294,21 @@ body {
 .azure-customer-tabs {
 	@apply w-[150px] m-3 align-middle bg-transparent hover:bg-[#eaebec];
 }
+/* .azure-customer-tabs-content_panel {
+// 	@apply bg-[url('../customer_image/')];
+// }*/
+.azure-customer-tabs-content_panel {
+	@apply h-[700px];
+}
+.azure-customer-tabs-content_panel .active {
+	@apply block h-[700px];
+}
+.azure-customer-tabs-content_panel > #nhs {
+	@apply h-full w-full bg-[url('../customer_image/nhs-desktop.webp')] bg-contain;
+}
+.azure-customer-tabs-content_items {
+	@apply hidden;
+}
+.azure-customer-tabs-content_items.active {
+	@apply block;
+}

@@ -6,6 +6,9 @@ const productTabs = document.querySelectorAll(
 const sectionProductTabs = document.querySelectorAll(
 	".azure-nav-tabs__sectiontablist li button"
 );
+const sectionCustomerTabs = document.querySelectorAll(
+	".azure-customer-tabs-contentlist li button"
+);
 const navsearch = document.querySelector("#nav-search-field");
 
 const closeBtn = document.getElementById("nav-search-close");
@@ -38,12 +41,13 @@ const buildTabsComponent = function (tabs) {
 			const tabName = e.target.getAttribute("aria-controls");
 			const tabPanel = document.getElementById(tabName);
 			const parentPanel = tabPanel.parentElement;
-			//console.log(parentTarget);
+			console.log(tabPanel);
+			console.log(e.target);
 			tabs.forEach((tab) => {
 				const parentTab = tab.parentElement;
 				const isActive = parentTab.classList.contains(activeClassName);
 
-				//console.log(parentTab);
+				console.log(parentTab);
 				if (parentTab === parentTarget) {
 					parentTab.classList.add(activeClassName);
 					if (lastActivePanel) {
@@ -61,6 +65,8 @@ const buildTabsComponent = function (tabs) {
 
 buildTabsComponent(productTabs);
 buildTabsComponent(sectionProductTabs);
+buildTabsComponent(sectionCustomerTabs);
+
 /* Product tab click events
 productTabs.forEach((tab) => {
 	tab.addEventListener("click", function (e) {
