@@ -976,10 +976,6 @@ video {
   width: 188px !important;
 }
 
-.w-\[30px\] {
-  width: 30px !important;
-}
-
 .max-w-\[1310px\] {
   max-width: 1310px !important;
 }
@@ -1322,16 +1318,6 @@ video {
 .px-\[18px\] {
   padding-left: 18px !important;
   padding-right: 18px !important;
-}
-
-.py-\[18px\] {
-  padding-top: 18px !important;
-  padding-bottom: 18px !important;
-}
-
-.px-\[10px\] {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
 }
 
 .pr-5 {
