@@ -29,6 +29,7 @@ module.exports = {
 				card2: "0 5px 10px rgb(0 0 0 / 14%)",
 				header: "0 0 8px -1px rgb(0 0 0 / 25%)",
 				wrapper: "0 10px 20px rgb(0 0 0 / 14%)",
+				chat_box: " 0 -5px 10px rgb(0 0 0 / 14%);",
 			},
 		},
 	},
