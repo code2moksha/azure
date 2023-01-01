@@ -16,6 +16,9 @@ const closeBtn = document.getElementById("nav-search-close");
 const searchBtn = document.getElementById("nav-search-button");
 const divSearch = document.getElementById("search-form-field");
 
+const menu_button = document.getElementById("utility_button");
+const close_button = document.getElementById("close_button");
+
 const dropDown = document.getElementById("dropdown");
 const activeClassName = "active";
 let lastActiveNav;
@@ -23,14 +26,25 @@ let lastActivePanel;
 window.addEventListener("load", (e) => {
 	defaultTabComponent(".azure-nav-tabs__sectiontablist", "popular-secnavtab");
 	defaultTabComponent(".azure-customer-tabs-contentlist", "nhs");
+	close_button.style.display = "none";
+});
+
+//Small Screen navigation bar
+
+menu_button.addEventListener("click", (e) => {
+	menu_button.style.display = "none";
+	close_button.style.display = "inline";
+});
+close_button.addEventListener("click", (e) => {
+	menu_button.style.display = "inline";
+	close_button.style.display = "none";
 });
 
 //Default tab and panel activation
 const defaultTabComponent = function (tab, panel) {
 	const defaultTab = document.querySelector(tab).firstElementChild;
 	const defaultTabPanel = document.getElementById(panel);
-	console.log(defaultTab);
-	console.log(defaultTabPanel);
+
 	defaultTab.classList.add(activeClassName);
 	defaultTabPanel.classList.add(activeClassName);
 };

@@ -72,7 +72,7 @@ body {
 	@apply flex items-center;
 }
 .azure-nav-link-home {
-	@apply ml-6 text-lg font-semibold;
+	@apply md:ml-6 text-lg font-semibold;
 }
 /*navigation list item*/
 .azure-nav-l1_list {
@@ -213,22 +213,22 @@ body {
 	@apply w-full;
 }
 .hero-image-background {
-	@apply bg-cover bg-[center] bg-[url('../hero-image.jpeg')] w-full h-[650px] pt-[72px] pb-[280px];
+	@apply bg-cover bg-[center] bg-[url('../hero-mobile.webp')] lg:bg-[url('../hero-image.jpeg')] w-full h-[500px] xl:h-[650px] pt-[72px] pb-[280px];
 }
 .row {
-	@apply mx-[65px];
+	@apply xl:mx-[65px];
 }
 .hero-content-grid {
-	@apply grid grid-rows-3 w-1/2 px-[15px] grid-flow-row;
+	@apply grid grid-rows-3 md:w-3/4 lg:w-1/2 px-[15px] grid-flow-row;
 }
 .super-text {
-	@apply text-[54px] text-[#1a1a1f] font-semibold leading-[1.2];
+	@apply text-[54px] text-[#1a1a1f] font-semibold leading-[1.2] text-center md:text-left;
 }
 .body-text {
-	@apply text-[18px] font-normal leading-[1.3] mt-3 text-[#4c4c51];
+	@apply text-[18px] font-normal leading-[1.3] mt-3 text-[#4c4c51] text-center md:text-left;
 }
 .list-horizontal {
-	@apply flex flex-row;
+	@apply flex md:flex-row flex-col;
 }
 .button {
 	@apply w-auto;

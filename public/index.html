@@ -16,14 +16,16 @@
 				</div>
 				<!-- for mobile -->
 				<div id="azure-nav-container">
-					<div class="flex items-center justify-between w-full md:hidden">
-						<div>
-							<button><img src="menu.png"></button>
+					<div class="flex items-center justify-between w-full h-20 p-3 md:hidden">
+						<div class="">
+							<button id="utility_button" class="w-11 h-11"><img  class="inline w-5 h-5" src="menu.png"></button>
+							<button id="close_button" class="w-11 h-11"><img  class="inline w-6 h-6" src="search_close.png"></button>
+							
 							<a class="azure-nav-link-home">Azure</a>
 						</div>
-						<div><img src="microsoft_logo.svg" class="h-6" alt="logo"/></div>
-						<div><button id="nav-mini-search-field"><img class="h-4 w-[14px]" src="searchicon.png"></button>
-							<a class=" flex-none text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></div>
+						<div><img src="microsoft_logo.svg" class=" w-8 h-8 md:h-6" alt="logo"/></div>
+						<div><button id="nav-mini-search-field"><img class="inline w-5 h-5 " src="searchicon.png"></button>
+							<a class=" flex-none text-[13px] text-center p-5 md:px-2 md:py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></div>
 					</div>
 					<div class=" hidden md:flex items-center w-full">
 					<nav class="azure-nav-l1">
@@ -1192,6 +1194,7 @@
 							</li>
 						</ul>
 					</nav>
+
 					<form id="azure-nav-search-form" class="azure-nav-search-form">
 					<div id="search-form-field" class="search-form-field">
               	<input id="nav-search-field" type="text" placeholder="Search" class="nav-search-field">
@@ -1200,7 +1203,7 @@
 						</div>
 					</form>
 				</div>
-					<nav class=" flex items-center">
+					<nav class=" hidden md:flex items-center">
 							<!-- <div>  -->
 								<ul class="flex item-end w-28 items-center lg1:w-96">
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
@@ -1256,10 +1259,13 @@
 								Get started now with pay-as-you-go pricing. There's no upfront
 								 commitment—cancel anytime. 
 								Or try Azure free for up to 30 days.</p></div>
-							<div class="hero-content-grid-row3"><ul class="list-horizontal">
-								<li class="mt-3 mr-6"><a class="w-auto hover:cursor-pointer bg-[#0078d4] hover:bg-[#006abb] hover:underline border border-solid border-[#0078d4] rounded px-4 py-[10px] text-white text-sm font-semibold ">Get started</a></li>
-							  <li class=" mt-3 "><a class="w-auto hover:cursor-pointer border border-black  px-4 py-[10px] bg-transparent text-black rounded text-sm font-semibold transition-colors duration-200 ease-in-out hover:underline hover:bg-black hover:text-white">Try Azure for free</a></li>
-							</ul></div>
+							<div class="hero-content-grid-row3">
+								<ul class="list-horizontal">
+								<!-- <li class=" w-full mt-3 mr-6  text-center"><a class="bg-[#0078d4] border border-solid border-[#0078d4] rounded px-">Get started</a></li> -->
+								<li class="md:mt-3 md:mr-6 h-8 text-center"><a class="w-auto hover:cursor-pointer bg-[#0078d4] hover:bg-[#006abb] hover:underline border border-solid border-[#0078d4] rounded px-[257px] py-4 md:px-4 md:py-[10px] text-white text-sm font-semibold ">Get started</a></li>
+							  <li class=" mt-7 md:mt-3 h-8 text-center" ><a class="w-auto md: hover:cursor-pointer border border-black px-60 py-4 md:px-4 md:py-[10px] bg-transparent text-black rounded text-sm font-semibold transition-colors duration-200 ease-in-out hover:underline hover:bg-black hover:text-white">Try Azure for free</a></li>
+							  </ul>
+						 </div>
 						</div>
 					</div>
 				</div>
