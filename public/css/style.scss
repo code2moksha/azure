@@ -213,7 +213,7 @@ body {
 	@apply w-full;
 }
 .hero-image-background {
-	@apply bg-cover bg-[center] bg-[url('../hero-mobile.webp')] lg:bg-[url('../hero-image.jpeg')] w-full h-[500px] xl:h-[650px] pt-[72px] pb-[280px];
+	@apply bg-cover bg-[center] bg-[url('../hero-mobile.webp')] lg:bg-[url('../hero-image.jpeg')] w-full h-[650px] pt-[72px] pb-[280px];
 }
 .row {
 	@apply xl:mx-[65px];

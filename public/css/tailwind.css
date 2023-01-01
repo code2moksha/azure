@@ -968,12 +968,16 @@ video {
   width: 24rem !important;
 }
 
-.w-auto {
-  width: auto !important;
+.w-3\/4 {
+  width: 75% !important;
 }
 
 .w-\[119px\] {
   width: 119px !important;
+}
+
+.w-auto {
+  width: auto !important;
 }
 
 .w-\[215px\] {
@@ -1326,19 +1330,9 @@ video {
   padding-bottom: 1.25rem !important;
 }
 
-.px-\[257px\] {
-  padding-left: 257px !important;
-  padding-right: 257px !important;
-}
-
 .py-4 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
-}
-
-.px-60 {
-  padding-left: 15rem !important;
-  padding-right: 15rem !important;
 }
 
 .py-\[60px\] {
@@ -2119,7 +2113,7 @@ body {
 }
 
 .hero-image-background {
-  height: 500px;
+  height: 650px;
   width: 100%;
   background-image: url('../hero-mobile.webp');
   background-size: cover;
@@ -2135,10 +2129,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .hero-image-background {
-    height: 650px;
-  }
-
   .row {
     margin-left: 65px;
     margin-right: 65px;
@@ -2625,6 +2615,10 @@ body {
     height: 1.5rem !important;
   }
 
+  .md\:w-auto {
+    width: auto !important;
+  }
+
   .md\:px-2 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
@@ -2643,6 +2637,10 @@ body {
   .md\:py-\[10px\] {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+  }
+
+  .md\:hover\:cursor-pointer:hover {
+    cursor: pointer !important;
   }
 }
 
