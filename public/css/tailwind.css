@@ -700,6 +700,10 @@ video {
   margin-top: 0.25rem !important;
 }
 
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+
 .mr-\[4\.0625rem\] {
   margin-right: 4.0625rem !important;
 }
@@ -816,6 +820,10 @@ video {
   height: 1.5rem !important;
 }
 
+.h-4 {
+  height: 1rem !important;
+}
+
 .h-full {
   height: 100% !important;
 }
@@ -908,6 +916,18 @@ video {
   width: 100% !important;
 }
 
+.w-\[14px\] {
+  width: 14px !important;
+}
+
+.w-28 {
+  width: 7rem !important;
+}
+
+.w-4 {
+  width: 1rem !important;
+}
+
 .w-96 {
   width: 24rem !important;
 }
@@ -978,6 +998,10 @@ video {
 
 .max-w-\[1310px\] {
   max-width: 1310px !important;
+}
+
+.flex-none {
+  flex: none !important;
 }
 
 .grow {
@@ -1608,11 +1632,21 @@ body {
 /* header-main */
 
 .azure-header-main {
-  margin-right: 4.0625rem;
-  margin-left: 4.0625rem;
   display: flex;
-  height: 100%;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .azure-header-main {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .azure-header-main {
+    margin-right: 4.0625rem;
+    margin-left: 4.0625rem;
+  }
 }
 
 .azure-header-main h2 {
@@ -2086,6 +2120,13 @@ body {
 
 .azure-nav-search-form {
   margin-bottom: 0.5rem;
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .azure-nav-search-form {
+    display: block;
+  }
 }
 
 .search-form-field {
@@ -2466,4 +2507,28 @@ body {
 
 .active\:border-dashed:active {
   border-style: dashed !important;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex !important;
+  }
+
+  .md\:hidden {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1080px) {
+  .lg1\:flex {
+    display: flex !important;
+  }
+
+  .lg1\:hidden {
+    display: none !important;
+  }
+
+  .lg1\:w-96 {
+    width: 24rem !important;
+  }
 }

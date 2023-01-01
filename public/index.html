@@ -11,12 +11,23 @@
 		<!--Header-->
 		<div class="azure-head-container">
 			<header id="azure-header" class="azure-header-main">
-				<div class="azure-nav-header-mobile"></div>
+				<div class="azure-nav-header-mobile">
+
+				</div>
 				<!-- for mobile -->
 				<div id="azure-nav-container">
-					<div class="flex items-center w-full">
+					<div class="flex items-center justify-between w-full md:hidden">
+						<div>
+							<button><img src="menu.png"></button>
+							<a class="azure-nav-link-home">Azure</a>
+						</div>
+						<div><img src="microsoft_logo.svg" class="h-6" alt="logo"/></div>
+						<div><button id="nav-mini-search-field"><img class="h-4 w-[14px]" src="searchicon.png"></button>
+							<a class=" flex-none text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></div>
+					</div>
+					<div class=" hidden md:flex items-center w-full">
 					<nav class="azure-nav-l1">
-						<div class="azure-nav-mobile"></div>
+						
 						<!-- for mobile-->
 						<div class="azure-identity">
 							<a class="azure-nav-link-microsoft">
@@ -33,7 +44,7 @@
 								<div class="button-expand" onclick="">
 									<div class="mobile-button-expand"></div>
 									<!--for mobile-->
-									<div class="tablet-button-expand">
+									<div class="tablet-button-efxpand">
 										<div class="tablet-button-expand-group">
 											<h2 class="tablet-button-expand_heading">
 												Explore Azure
@@ -1190,15 +1201,17 @@
 					</form>
 				</div>
 					<nav class=" flex items-center">
-							<div> 
-								<ul class="flex items-center w-96">
-								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
-								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Support</a></li>
-								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Contact Sales</a></li>
-								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="inline-block bg-[#89c402] border   active:border-dashed border-[#6f9e02] rounded font-semibold text-xs text-[#1a1a1f] text-[13px] text-center p-[9px] mx-[6px] hover:underline hover:cursor-pointer">Free account</a></li>
-								<li class="flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></li>
+							<!-- <div>  -->
+								<ul class="flex item-end w-28 items-center lg1:w-96">
+								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
+								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Support</a></li>
+								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Contact Sales</a></li>
+								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="inline-block bg-[#89c402] border   active:border-dashed border-[#6f9e02] rounded font-semibold text-xs text-[#1a1a1f] text-[13px] text-center p-[9px] mx-[6px] hover:underline hover:cursor-pointer">Free account</a></li>
+								<li class="hidden md:flex leading-none font-normal text-sm m-0 lg1:hidden"><button id="nav-mini-search-field"><img class="h-4 w-[14px]" src="searchicon.png"></button></li>
+								<li class=" hidden md:flex leading-none font-normal text-sm ml-2 lg1:hidden"><button class="px-2 py-5 active:border-dashed hover:cursor-pointer"><img class="w-4 h-4" src="dots.png"></button></li>
+								<li class="hidden md:flex leading-none font-normal text-sm m-0 "><a class=" flex-none text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></li>
 							</ul>
-							</div>
+							<!-- </div> -->
 					</nav> 
 				</div>
 			</header>
@@ -1725,7 +1738,11 @@
 		</ul>
   </div>
  </div>
+ <!---chatbox button-->
  <button class="bg-[#0078d4] w-auto h-10 shadow-chat_box rounded-t px-[18px] py-[10px] leading-5 fixed bottom-0 right-3 flex"><img src="comment.png"/><span class=" text-white text-sm">Chat with sales</span></button>
+ <!--chatbox div-->
+ <div></div>
+ 
  <div class="mx-[65px] mt-9 px-[18px] grid grid-cols-3 h-[104px]">
 	<div class="flex flex-col col-span-1 w-[188px]">
 		<label class="block mb-1 text-[#1a1a1f] text-xs">Change language</label>

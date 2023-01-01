@@ -10,6 +10,7 @@ const sectionCustomerTabs = document.querySelectorAll(
 	".azure-customer-tabs-contentlist li button"
 );
 const navsearch = document.querySelector("#nav-search-field");
+const mininavsearch = document.querySelector("#nav-search-field");
 
 const closeBtn = document.getElementById("nav-search-close");
 const searchBtn = document.getElementById("nav-search-button");
@@ -124,7 +125,7 @@ navMenus.forEach((menu) => {
 navsearch.addEventListener("click", (e) => {
 	//e.stopPropagation();
 	e.preventDefault();
-
+	console.log("hai");
 	// const searchForm = document.getElementById("azure-nav-search-form");
 
 	dropDown.style.display = "none";

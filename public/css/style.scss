@@ -46,7 +46,7 @@ body {
 
 /* header-main */
 .azure-header-main {
-	@apply flex items-center h-full mr-[4.0625rem] ml-[4.0625rem];
+	@apply flex items-center md:h-full  lg1:mr-[4.0625rem] lg1:ml-[4.0625rem];
 }
 .azure-header-main h2 {
 	@apply text-xs font-semibold mb-5;
@@ -235,7 +235,7 @@ body {
 }
 /* Navigation Search Form*/
 .azure-nav-search-form {
-	@apply mb-2;
+	@apply hidden lg1:block mb-2;
 }
 .search-form-field {
 	@apply flex w-[120px] mr-6;
