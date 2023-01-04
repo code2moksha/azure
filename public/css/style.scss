@@ -31,6 +31,27 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
+.hide_show {
+	@apply hidden md:flex;
+}
+.smallScreen_customer {
+	@apply hidden;
+}
+.smallScreen_customer.active {
+	@apply block;
+}
+.smallScreen_customerButton {
+	@apply mr-5 bg-[#2e2e33]   h-2 w-2 rounded-lg border border-[#b8b9ba] hover:cursor-pointer focus:outline focus:outline-offset-2;
+}
+.customer_tab_buttons_items.active > button {
+	@apply mr-5 bg-[#0078d4]   h-2 w-2 rounded-lg border border-[#b8b9ba] hover:cursor-pointer focus:outline focus:outline-offset-2;
+}
+.customer_tab_buttons {
+	@apply flex justify-center mt-6 md:hidden;
+}
+.width_adjust {
+	@apply md:w-1/4;
+}
 .search_icon {
 	@apply w-[14px] h-[14px];
 }
@@ -57,7 +78,7 @@ body {
 	@apply hidden fixed top-0 opacity-0 w-full transition-all -translate-y-full  z-0 duration-[1000ms] ease-in-out border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
 }
 .head-container-mini.active {
-	@apply block fixed top-0 opacity-100 w-full translate-y-0 z-10 border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
+	@apply md:flex justify-between fixed top-0 opacity-100 w-full p-3 translate-y-0 z-10 border-b h-[4.875rem] md:h-[3.4375rem] lg1:h-[3.375rem] bg-white;
 }
 
 /*navigation*/
@@ -72,7 +93,10 @@ body {
 	@apply flex items-center;
 }
 .azure-nav-link-home {
-	@apply md:ml-6 text-lg font-semibold;
+	@apply md:ml-6 text-lg font-semibold hover:cursor-pointer hover:underline outline-none focus:border focus:border-dashed focus:border-black;
+}
+.azure-nav-link-microsoft {
+	@apply hover:cursor-pointer  outline-none focus:border focus:border-dashed focus:border-black;
 }
 /*navigation list item*/
 .azure-nav-l1_list {
@@ -173,7 +197,7 @@ body {
 	@apply p-3 m-[1px] hover:underline w-full text-left;
 }
 .azure-nav-tabs-content {
-	@apply ml-10;
+	@apply ml-8;
 }
 .tab-buttons.active {
 	@apply border border-dashed border-black;
@@ -263,7 +287,7 @@ body {
 	@apply p-0;
 }
 .azure-nav-tabs__sectiontablist {
-	@apply block w-60;
+	@apply block w-auto lg:w-60;
 }
 /* .azure-nav-tabs__sectiontablist li > button {
 // 	@apply block w-full no-underline bg-transparent text-[#4c4c51] text-left text-base -ml-[3px] p-3 hover:text-[#0062ad];
@@ -307,22 +331,22 @@ body {
 	@apply block h-[700px];
 }
 .azure-customer-tabs-content_panel > #nhs {
-	@apply h-full w-full bg-[url('../customer_image/nhs-desktop.webp')] bg-contain;
+	@apply h-full w-full bg-[url('../customer_image/nhs-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_panel > #forza_horizon_5 {
-	@apply h-full w-full bg-[url('../customer_image/forza5-desktop.webp')] bg-contain;
+	@apply h-full w-full bg-[url('../customer_image/forza5-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_panel > #nba {
 	@apply h-full w-full bg-[url('../customer_image/nba-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_panel > #american_cancer_society {
-	@apply h-full w-full bg-[url('../customer_image/acs-desktop.webp')] bg-contain;
+	@apply h-full w-full bg-[url('../customer_image/acs-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_panel > #pepsico {
 	@apply h-full w-full bg-[url('../customer_image/pepsico-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_panel > #ge_digital {
-	@apply h-full w-full bg-[url('../customer_image/ge-desktop.webp')] bg-contain;
+	@apply h-full w-full bg-[url('../customer_image/ge-desktop.webp')] bg-cover;
 }
 .azure-customer-tabs-content_items {
 	@apply hidden;

@@ -43,18 +43,17 @@
 									Explore
 									<img class="arrow" src="down-arrow.png" />
 								</button>
-								<div class="button-expand" onclick="">
+								<div class="button-expand">
 									<div class="mobile-button-expand"></div>
 									<!--for mobile-->
-									<div class="tablet-button-efxpand">
+									<div class="tablet-button-expand">
 										<div class="tablet-button-expand-group">
 											<h2 class="tablet-button-expand_heading">
 												Explore Azure
 											</h2>
 											<ul class="tablet-button-expand_list">
 												<li>
-													<a
-														class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
+													<a class="font-semibold leading-none no-underline hover:cursor-pointer hover:underline"
 														>Get to know Azure</a
 													>
 													<p class="mt-1.5 text-[13px] leading-normal">
@@ -1205,7 +1204,7 @@
 				</div>
 					<nav class=" hidden md:flex items-center">
 							<!-- <div>  -->
-								<ul class="flex item-end w-auto items-center lg1:w-96">
+								<ul class="flex item-end w-28 items-center lg1:w-96">
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Support</a></li>
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Contact Sales</a></li>
@@ -1308,12 +1307,10 @@
 			</div>	
 		</section><!--end section1-->
 		<!--Section2 Products and Services-->
-		<!-- <section class="w-full lg:px-2 xl:px-16 py-[60px] bg-[#f8f9fa] overflow-hidden"> -->
-			<section class="w-full py-[60px] bg-[#f8f9fa] overflow-hidden">
+		<section class="w-full lg:px-2 xl:px-16 pt-[60px] bg-[#f8f9fa] overflow-hidden">
 			<div class="mx-auto text-center md:text-left px-[15px]"><h2 class="text-[#1a1a1f] text-xl md:text-2xl font-semibold leading-[1.2]">Start putting your ideas into action with Azure products and services</h2> 
 			</div>
-			<div><!--products and services-->
-			  <div class="flex justify-start mt-8 p-3 lg:p-0">
+			<div class="flex justify-start mt-8 p-3 lg:p-0">
 				<div class="hide_show">
 				<ul class="azure-nav-tabs__sectiontablist">
 					<li class="sectiontab-buttons">
@@ -1372,7 +1369,7 @@
 						</button>
 					</li>
 				</ul>
-			   </div>
+			</div>
 				<div class="azure-nav-tabs-content ">
 					<div class="md:hidden">
 						<button class="flex w-full mt-3 justify-between items-center p-3 mb-3 bg-white border-b rounded border-[#eaebec] text-[#1a1a1f] font-semibold hover:text-[#0062ad] hover:underline " aria-controls="popular-secnavtab" ><span>Featured</span><img src="down-arrow.png"></button>
@@ -1690,230 +1687,27 @@
 				</div>						
 				</div>										
 			 </div>
+			 
 			</div>
-			
-			<div class="hidden lg:flex flex-col relative justify-start hover:-translate-x-6 duration-500">
+
+			<div class=" flex flex-col justify-center p-4 md:hidden ">
+				<button class="text-[#0062ad] text-sm hover:underline hover:text-black focus:outline-2 focus:outline focus:outline-black">See all products (200+)<img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/></button>
+			  <button class="overflow-visible"><img class="w-auto rounded-xl bg-black shadow-wrapper p-6 hover:cursor-pointer" src="tab-screen.webp"></button>
+		  </div>
+			<div class="hidden lg:flex flex-col relative justify-start -top-[520px] left-[1025px] hover:-translate-x-6 duration-500">
 				<button class="overflow-visible"><img class="w-full h-[550px] rounded-xl bg-black shadow-wrapper p-6 hover:cursor-pointer" src="tab-screen.webp"></button>
 				<button class="w-[13rem] h-16 text-[#0062ad] text-sm pl-10 pr-3 text-left">
 					<img class="relative -bottom-7 -left-5" src="left-arrow.png">View Azure portal screenshot in full screen
 				</button>
 			</div>
-		</div>
-      <!-- <div class="hidden relative -top-[520px] left-[1025px]">
-				<button class=""><img class="" src="tab-screen.webp"></button>
-				<button class="">
-					<img class="" src="left-arrow.png">View Azure portal screenshot in full screen
-				</button>
-			</div> -->
-			
+			<div class="hidden md:flex justify-end lg:hidden"><button class="w-[13rem] h-16 text-[#0062ad] text-sm pl-10 pr-3 text-left">
+				<img class="relative -bottom-7 -left-5" src="left-arrow.png">View Azure portal screenshot in full screen
+			</button></div>
 		</section>
 		<!--customer section-->
-		<section class="py-[60px] bg-white">
-			<div class="mx-16 px-3 text-center"><h2 class="text-xl md:text-2xl font-semibold text-[#1a1a1f]">Find out how these customers are innovating with Azure</h2></div>
-		  <!--for small screen-->
-			<div class="md:hidden">
-				<!--nhs-->
-        <div class="smallScreen_customer" id="small_nhs">	
-			   <ul class="flex justify-center">
-						<li class="smallScreen_customer active"><img src="./customer_image/nhs-logo.svg"></li>
-				 </ul>
-				 <img src="./customer_image/nhs-desktop.webp">
-				 <div class="bg-[#f8f9fa] p-6">
-           <p class="text-xl font-normal ">North Umbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalised profiles created with
-						  Azure Machine Learning and the Responsible AI Dashboard.</p>
-							<div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-							</button></div>
-				 </div>
-				</div>
-			 <!--forza5-->
-			 <div class="smallScreen_customer" id="small_forza5">	
-				<ul class="flex justify-center">
-					 <li class="smallScreen_customer active"><img src="./customer_image/forza5-logo.svg"></li>
-				</ul>
-				<img src="./customer_image/forza5-desktop.webp">
-				<div class="bg-[#f8f9fa] p-6">
-					<p class="text-xl font-normal ">Turn 10 Studios created a turbocharged gaming architecture for Forza Horizon 5 using Azure Kubernetes Service (AKS) and other Azure services.</p>
-						 <div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-						 </button></div>
-				</div>
-			 </div>
-			 <!--nba-->
-			 <div class="smallScreen_customer" id="small_nba">	
-				<ul class="flex justify-center">
-					 <li class="smallScreen_customer active"><img src="./customer_image/nba-logo.svg"></li>
-				</ul>
-				<img src="./customer_image/nba-desktop.webp">
-				<div class="bg-[#f8f9fa] p-6">
-					<p class="text-xl font-normal ">To expand the possibilities for innovative fan experiences and streamline day-to-day operations, the NBA migrated its SAP solutions and other IT resources to Azure.</p>
-						 <div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-						 </button></div>
-				</div>
-			 </div>
-			 <!--acs-->
-			 <div class="smallScreen_customer" id="small_acs">	
-				<ul class="flex justify-center">
-					 <li class="smallScreen_customer active"><img src="./customer_image/acs-logo.svg"></li>
-				</ul>
-				<img src="./customer_image/acs-desktop.webp">
-				<div class="bg-[#f8f9fa] p-6">
-					<p class="text-xl font-normal ">American Cancer Society kept resources flowing to patients and researchers during the global pandemic by transitioning their infrastructure to Azure.</p>
-						 <div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-						 </button></div>
-				</div>
-			 </div>
-			 <!--pepsico-->
-			 <div class="smallScreen_customer" id="small_pepsico">	
-				<ul class="flex justify-center">
-					 <li class="smallScreen_customer active"><img src="./customer_image/pepsico-logo.svg"></li>
-				</ul>
-				<img src="./customer_image/pepsico-desktop.webp">
-				<div class="bg-[#f8f9fa] p-6">
-					<p class="text-xl font-normal ">American Cancer Society kept resources flowing to patients and researchers during the global pandemic by transitioning their infrastructure to Azure.</p>
-						 <div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-						 </button></div>
-				</div>
-			 </div>
-			 <!--ge-->
-			 <div class="smallScreen_customer" id="small_ge">	
-				<ul class="flex justify-center">
-					 <li class="smallScreen_customer active"><img src="./customer_image/ge-logo.svg"></li>
-				</ul>
-				<img src="./customer_image/ge-desktop.webp">
-				<div class="bg-[#f8f9fa] p-6">
-					<p class="text-xl font-normal ">GE Digital helps pilots make the skies safer with data and analytics provided through its FlightPulse app—built using the open-source .NET platform.</p>
-						 <div class="flex mt-6"><a class="hover:underline hover:cursor-pointer text-sm text-left font-semibold text-[#0062ad]">Case study</a><img class="relative w-6 h-6 hover:-right-1" src="angle-right.png"/>
-						 </button></div>
-				</div>
-			 </div>
-		 
-		</div>		
-		<ul class="customer_tab_buttons">
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_nhs"></button></li>
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_forza5"></button></li>
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_nba"></button></li>
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_acs"></button></li>
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_pepsico"></button></li>
-			<li class="customer_tab_buttons_items"> <button class="smallScreen_customerButton" aria-controls="small_ge"></button></li>
-		  </ul>
-	<!--EO for small screen-->
-	<div class="hidden md:block">
-		<div class="mt-6 mx-16 px-3">
-		<ul class="azure-customer-tabs-contentlist">
-			<li class="azure-customer-tabs" aria-controls="nhs"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/nhs-logo.svg')] bg-no-repeat bg-center" aria-controls="nhs" ></button></li>
-			<li class="azure-customer-tabs" aria-controls="forza_horizon_5"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/forza5-logo.svg')] bg-no-repeat bg-center" aria-controls="forza_horizon_5"></button></li>
-			<li class="azure-customer-tabs" aria-controls="nba"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/nba-logo.svg')] bg-no-repeat bg-center" aria-controls="nba"></button></li>
-			<li class="azure-customer-tabs" aria-controls="american_cancer_society"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/acs-logo.svg')] bg-no-repeat bg-center" aria-controls="american_cancer_society"></button></li>
-			<li class="azure-customer-tabs" aria-controls="pepsico"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/pepsico-logo.svg')] bg-no-repeat bg-center" aria-controls="pepsico"></button></li>
-			<li class="azure-customer-tabs" aria-controls="ge_digital"><button class="flex place-content-center border-transparent border-b-4 w-[150px] h-[84px] focus:border-blue-600 focus:outline focus:outline-2 focus:outline-offset-2 focus:grayscale-0 grayscale hover:grayscale-0 bg-[url('../customer_image/ge-logo.svg')] bg-no-repeat bg-center" aria-controls="ge_digital"></button></li>
-		</ul>
-	</div>
-	<div class="azure-customer-tabs-content_panel">
-		<div id="nhs" class="azure-customer-tabs-content_items">
-			<div class="relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">North Umbria Healthcare NHS Foundation Trust is helping patients understand surgical risks with personalised profiles created with Azure Machine Learning and the Responsible AI Dashboard.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-			<div></div>
-		</div>
-		<div id="forza_horizon_5" class="azure-customer-tabs-content_items">
-			<div class="hide_show relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">Turn 10 Studios created a turbocharged gaming architecture for Forza Horizon 5 using Azure Kubernetes Service (AKS) and other Azure services.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-		</div>
-		<div id="nba" class="azure-customer-tabs-content_items">
-			<div class="relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">To expand the possibilities for innovative fan experiences and streamline day-to-day operations, the NBA migrated its SAP solutions and other IT resources to Azure.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-		</div>
-		<div id="american_cancer_society" class="azure-customer-tabs-content_items">
-			<div class="relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">American Cancer Society kept resources flowing to patients and researchers during the global pandemic by transitioning their infrastructure to Azure.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-		</div>
-		<div id="pepsico" class="azure-customer-tabs-content_items">
-			<div class="relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">PepsiCo uses Azure Machine Learning to identify consumer shopping trends and provide actionable, store-level insights.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-		</div>
-		<div id="ge_digital" class="azure-customer-tabs-content_items">
-			<div class="relative w-[620px] h-[202px] ml-20 top-[450px] bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
-				<div><p class="text-xl font-normal leading-snug">GE Digital helps pilots make the skies safer with data and analytics provided through its FlightPulse app—built using the open-source .NET platform.</p></div>
-				<div class="flex mt-6"><a class="underline text-sm">Case study</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px]" src="arrow-right-white.png"/></div>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
-		<!--Migrate and accelerate-->
-		<section class="bg-[#f8f9fa] py-14">
-			<div class="flex flex-col md:flex-row mx-auto p-9">
-				<div class=" flex-none  md:flex-initial w-auto">
-					<img src="accelerate-migrate.webp"/>
-				</div>
-				<div class="self-center pl-2 pr-10 max-w-3xl">
-					<h2 class=" text-start text-4xl font-medium md:font-semibold text-[#1a1a1f]">Accelerate your migration and modernisation with Azure</h2>
-					 <div class="flex mt-9 justify-center md:justify-start"><a class="py-4 px-28 md:px-4 md:py-[10px] border rounded bg-transparent border-[#0078d4] text-[#0062ad] text-sm font-semibold hover:text-white hover:underline hover:bg-[#0078d4] transition-colors duration-200 ease-in-out">Explore help and tools</a>
-				   </div>
-				</div>
-			 </div>
-		</section>
-<!--Sections what happens-->
-		<section class=" py-[84px] bg-white">
-			<div class="mx-4 lg1:mx-16">
-			<div class="text-left mb-6"><h2 class="text-[#1a1a1f] text-2xl font-semibold leading-[1.2]">Discover what’s happening on Azure</h2> 
-			</div>
-      <div class="grid grid-cols-3 lg:grid-cols-4 gap-x-[30px] gap-y-[24px]">
-				<div class="flex flex-col hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
-					<div><img class="rounded-t-md" src="./happen_image/monitor.webp"></div>
-					<div class="flex flex-col grow gap-x-3 p-3">
-							 <p class="text-[#4c4c51] text-xs font-semibold">AZURE MONITOR</p>
-							 <p class="text-[#2e2e33] no-underline hover:underline">Modernise open-source environments with Azure Monitor managed service for Prometheus.</p>
-					</div>	
-				 </div>
-				 <div class="flex flex-col hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
-					 <div><img class="rounded-t-md" src="./happen_image/migrate.webp"></div>
-					 <div class="flex flex-col grow gap-x-3 p-3">
-								<p class="text-[#4c4c51] text-xs font-semibold">AZURE MIGRATE</p>
-								<p class="text-[#2e2e33] no-underline hover:underline">
-								 Create a plan for your Azure migration using customisable cost modelling features.
-						 </p>
-					 </div>	
-					</div>
-				 <div class="p-6 flex items-center shrink lg:col-span-2  shadow-card1 border border-transparent bg-white bg-[url('../happen_image/win-server-sql.webp')] bg-no-repeat bg-contain lg:bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
-					<div class="relative -bottom-[86px] p-6 hover:underline"><a class="text-lg lg:text-2xl font-semibold text-white">
-					 Read The Business Value of Microsoft Azure for Windows Server and SQL Server Workloads by IDC.
-			 </a></div>
-				 </div>	
-				 <div class="hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
-					<div><img class="rounded-t-md" src="./happen_image/windows-server.webp"></div>
-					<div class="flex flex-col grow gap-3 p-3">
-							 <p class="text-[#4c4c51] text-xs font-semibold">WINDOWS SERVER</p>
-							 <p class="text-[#2e2e33] no-underline hover:underline">			
-								Simplify management across on-premises and cloud infrastructure with the latest Windows Server innovations.
-							</p>
-					</div>	
-				 </div>
-				 <div class="flex items-center shrink lg:col-span-2 shadow-card1 border border-transparent bg-white bg-[url('../happen_image/azure-regions-1250w.webp')] bg-no-repeat bg-contain lg:bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
-					<div class="relative -bottom-[86px] p-6 hover:underline"><a class=" text-lg lg:text-2xl font-semibold text-white">
-					 Go beyond the limits of on-premises data centres with more regions than any other provider.
-					</a></div>
-				 </div>
-				 <div class="hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
-					<div><img class="rounded-t-md" src="./happen_image/cloud-economics.webp"></div>
-					<div class="flex flex-col grow gap-3 p-3">
-							 <p class="text-[#4c4c51] text-xs font-semibold">CLOUD ECONOMICS</p>
-							 <p class="text-[#2e2e33] no-underline hover:underline">			
-								Build your cloud business case with key financial and technical guidance from Azure.               
-							</p>
-					</div>	
-				 </div>			 
-			</div>
-		</div>
-		</section>
+		<section class="py-[60px] bg-white"></section>
+		<!--Sections what happens-->
+
 <!--Self taught developer-->
 
 		<script src="utilites.js"></script>

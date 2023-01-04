@@ -9,6 +9,9 @@ const sectionProductTabs = document.querySelectorAll(
 const sectionCustomerTabs = document.querySelectorAll(
 	".azure-customer-tabs-contentlist li button"
 );
+const sectionCustomerTabButtons = document.querySelectorAll(
+	".customer_tab_buttons li button"
+);
 const navsearch = document.querySelector("#nav-search-field");
 const mininavsearch = document.querySelector("#nav-search-field");
 
@@ -26,6 +29,7 @@ let lastActivePanel;
 window.addEventListener("load", (e) => {
 	defaultTabComponent(".azure-nav-tabs__sectiontablist", "popular-secnavtab");
 	defaultTabComponent(".azure-customer-tabs-contentlist", "nhs");
+	defaultTabComponent(".customer_tab_buttons", "small_nhs");
 	close_button.style.display = "none";
 });
 
@@ -42,6 +46,7 @@ close_button.addEventListener("click", (e) => {
 
 //Default tab and panel activation
 const defaultTabComponent = function (tab, panel) {
+	console.log(tab);
 	const defaultTab = document.querySelector(tab).firstElementChild;
 	const defaultTabPanel = document.getElementById(panel);
 
@@ -59,26 +64,30 @@ const buildTabsComponent = function (tabs) {
 	tabs.forEach((tab) => {
 		tab.addEventListener("click", function (e) {
 			e.stopImmediatePropagation();
-			const parentTarget = e.target.parentElement;
-			const tabName = e.target.getAttribute("aria-controls");
-			const tabPanel = document.getElementById(tabName);
-			const parentPanel = tabPanel.parentElement;
-			console.log(tabPanel);
-			console.log(e.target);
+			const targetParent = e.target.parentElement;
+			const targetTabName = e.target.getAttribute("aria-controls");
+			const targetTabPanel = document.getElementById(targetTabName);
+			const parentPanel = targetTabPanel.parentElement;
+
 			tabs.forEach((tab) => {
 				const parentTab = tab.parentElement;
+				const tabName = tab.getAttribute("aria-controls");
+				const tabPanel = document.getElementById(tabName);
 				const isActive = parentTab.classList.contains(activeClassName);
+				console.log(tabName);
 
-				console.log(parentTab);
-				if (parentTab === parentTarget) {
+				if (parentTab === targetParent) {
 					parentTab.classList.add(activeClassName);
 					if (lastActivePanel) {
 						lastActivePanel.classList.remove(activeClassName);
 					}
-					tabPanel.classList.add(activeClassName);
-					lastActivePanel = tabPanel;
+					targetTabPanel.classList.add(activeClassName);
+					lastActivePanel = targetTabPanel;
 				} else {
 					parentTab.classList.remove(activeClassName);
+					if (tabPanel) {
+						tabPanel.classList.remove(activeClassName);
+					}
 				}
 			});
 		});
@@ -88,6 +97,7 @@ const buildTabsComponent = function (tabs) {
 buildTabsComponent(productTabs);
 buildTabsComponent(sectionProductTabs);
 buildTabsComponent(sectionCustomerTabs);
+buildTabsComponent(sectionCustomerTabButtons);
 
 /* Product tab click events
 productTabs.forEach((tab) => {
