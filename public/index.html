@@ -1203,16 +1203,16 @@
 						</div>
 					</form>
 				</div>
-					<nav class=" hidden md:flex items-center">
+					<nav class=" hidden md:flex items-center ">
 							<!-- <div>  -->
-								<ul class="flex item-end w-auto items-center lg1:w-96">
+								<ul class="flex item-end w-auto items-center">
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5 active:border-dashed hover:underline hover:cursor-pointer">Learn</a></li>
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Support</a></li>
 								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Contact Sales</a></li>
-								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="inline-block bg-[#89c402] border   active:border-dashed border-[#6f9e02] rounded font-semibold text-xs text-[#1a1a1f] text-[13px] text-center p-[9px] mx-[6px] hover:underline hover:cursor-pointer">Free account</a></li>
+								<li class="hidden lg1:flex items-center leading-none font-normal text-sm m-0 "><a class="inline-block bg-[#89c402] border active:border-dashed border-[#6f9e02] rounded font-semibold text-xs text-[#1a1a1f] text-center p-2 mx-[6px] hover:underline hover:cursor-pointer">Free account</a></li>
 								<li class="hidden md:flex leading-none font-normal text-sm m-0 lg1:hidden"><button id="nav-mini-search-field"><img class="h-4 w-[14px]" src="searchicon.png"></button></li>
-								<li class=" hidden md:flex leading-none font-normal text-sm ml-2 lg1:hidden"><button class="px-2 py-5 active:border-dashed hover:cursor-pointer"><img class="w-4 h-4" src="dots.png"></button></li>
-								<li class="hidden md:flex leading-none font-normal text-sm m-0 "><a class=" flex-none text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></li>
+								<li class="hidden md:flex leading-none font-normal text-sm ml-2 lg1:hidden"><button class="px-2 py-5 active:border-dashed hover:cursor-pointer"><img class="w-4 h-4" src="dots.png"></button></li>
+								<li class="hidden shrink-[2] md:flex bg-red-300 leading-none font-normal text-sm m-0 lg:bg-amber-200 lg1:bg-green-400 xl:bg-blue-500"><a class="w-16 text-[13px] text-center px-2 py-5  active:border-dashed hover:underline hover:cursor-pointer">Sign in</a></li>
 							</ul>
 							<!-- </div> -->
 					</nav> 
@@ -1862,11 +1862,12 @@
 			 </div>
 		</section>
 <!--Sections what happens-->
-		<section class=" py-[84px] bg-white">
+		<section class=" py-[84px] bg-white overflow-visible">
 			<div class="mx-4 lg1:mx-16">
 			<div class="text-left mb-6"><h2 class="text-[#1a1a1f] text-2xl font-semibold leading-[1.2]">Discover what’s happening on Azure</h2> 
 			</div>
-      <div class="grid grid-cols-3 lg:grid-cols-4 gap-x-[30px] gap-y-[24px]">
+			<div class="">
+      <div class="grid grid-cols-scrolls md:grid-cols-3 lg:grid-cols-4 gap-x-[30px] gap-y-[24px] overflow-scroll">
 				<div class="flex flex-col hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
 					<div><img class="rounded-t-md" src="./happen_image/monitor.webp"></div>
 					<div class="flex flex-col grow gap-x-3 p-3">
@@ -1874,21 +1875,21 @@
 							 <p class="text-[#2e2e33] no-underline hover:underline">Modernise open-source environments with Azure Monitor managed service for Prometheus.</p>
 					</div>	
 				 </div>
-				 <div class="flex flex-col hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
+				<div class="flex flex-col hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
 					 <div><img class="rounded-t-md" src="./happen_image/migrate.webp"></div>
-					 <div class="flex flex-col grow gap-x-3 p-3">
+					 <div class="flex flex-col min-w-[230px] grow gap-x-3 p-3">
 								<p class="text-[#4c4c51] text-xs font-semibold">AZURE MIGRATE</p>
 								<p class="text-[#2e2e33] no-underline hover:underline">
 								 Create a plan for your Azure migration using customisable cost modelling features.
 						 </p>
 					 </div>	
-					</div>
-				 <div class="p-6 flex items-center shrink lg:col-span-2  shadow-card1 border border-transparent bg-white bg-[url('../happen_image/win-server-sql.webp')] bg-no-repeat bg-contain lg:bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
-					<div class="relative -bottom-[86px] p-6 hover:underline"><a class="text-lg lg:text-2xl font-semibold text-white">
+				</div>
+			  <div class="p-6 flex flex-col justify-end shrink lg:col-span-2  shadow-card1 border border-transparent bg-white bg-[url('../happen_image/win-server-sql.webp')] bg-no-repeat bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
+					<div class="hover:underline"><a class="text-lg lg:text-2xl font-semibold text-white">
 					 Read The Business Value of Microsoft Azure for Windows Server and SQL Server Workloads by IDC.
 			 </a></div>
 				 </div>	
-				 <div class="hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
+			 <div class="hover:cursor-pointer border rounded-md border-transparent shadow-card1 bg-white hover:shadow-card2 transition-all  duration-200 ease-in-out">
 					<div><img class="rounded-t-md" src="./happen_image/windows-server.webp"></div>
 					<div class="flex flex-col grow gap-3 p-3">
 							 <p class="text-[#4c4c51] text-xs font-semibold">WINDOWS SERVER</p>
@@ -1897,8 +1898,8 @@
 							</p>
 					</div>	
 				 </div>
-				 <div class="flex items-center shrink lg:col-span-2 shadow-card1 border border-transparent bg-white bg-[url('../happen_image/azure-regions-1250w.webp')] bg-no-repeat bg-contain lg:bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
-					<div class="relative -bottom-[86px] p-6 hover:underline"><a class=" text-lg lg:text-2xl font-semibold text-white">
+				 <div class="flex p-6 flex-col justify-end shrink lg:col-span-2 shadow-card1 border border-transparent bg-white bg-[url('../happen_image/azure-regions-1250w.webp')] bg-no-repeat bg-cover rounded-md hover:cursor-pointer hover:shadow-card2">					
+					<div class="hover:underline"><a class=" text-lg lg:text-2xl font-semibold text-white">
 					 Go beyond the limits of on-premises data centres with more regions than any other provider.
 					</a></div>
 				 </div>
@@ -1910,11 +1911,31 @@
 								Build your cloud business case with key financial and technical guidance from Azure.               
 							</p>
 					</div>	
-				 </div>			 
+				 </div>			  
 			</div>
+		</div>
 		</div>
 		</section>
 <!--Self taught developer-->
+   <section class="">
+		<div class=" flex items-center h-full max-w-full bg-[url('../desktop.webp')] bg-no-repeat bg-contain md:bg-cover">
+       <div class=" hidden md:flex flex-col shrink  items-start bg-[#1a1a1f] text-white rounded-md p-6 opacity-90">
+				<div><p class="text-2xl font-semibold leading-snug">See how a self-taught developer helped level the playing field for people with disabilities by creating a video game controller that uses voice and facial cues.</p></div>
+			  <div class="flex mt-6">
+				<a class=" flex first-letter:w-auto hover:cursor-pointer bg-[#0078d4] hover:bg-[#006abb] hover:underline border border-solid border-[#0078d4] rounded px-4 py-[10px] text-white text-sm font-semibold mr-3">
+					<img src="play-button.png" class="mr-1">Watch the story (4:51)</a>
+				<a class="underline text-sm font-medium self-center ml-1">Checkout more developer stories</a><img class="relative w-5 h-5 hover:translate-x-0.5 duration-200 pt-[1px] self-center" src="arrow-right-white.png"/>
+			 </div>
+			  
+			 </div> 
+			 <button class=" justify-center md:hidden bg-white w-20 h-20 rounded-full content-center"></button>		 
+		</div>
+		<div class="md:hidden">
+			<p class="text-2xl font-semibold leading-snug">See how a self-taught developer helped level the playing field for people with disabilities by creating a video game controller that uses voice and facial cues.</p>
+			<div class="flex mt-9 justify-center md:justify-start"><a class="py-4 px-28 md:px-4 md:py-[10px] border rounded bg-transparent border-[#0078d4] text-[#0062ad] text-sm font-semibold hover:text-white hover:underline hover:bg-[#0078d4] transition-colors duration-200 ease-in-out">Explore help and tools</a>
+			</div> 
+		</div>
+	 </section>
 
 		<script src="utilites.js"></script>
 	</body>

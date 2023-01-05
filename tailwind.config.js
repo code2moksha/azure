@@ -31,6 +31,9 @@ module.exports = {
 				wrapper: "0 10px 20px rgb(0 0 0 / 14%)",
 				chat_box: " 0 -5px 10px rgb(0 0 0 / 14%);",
 			},
+			gridTemplateColumns: {
+				scrolls: "repeat(6,minmax(230px,1fr))",
+			},
 		},
 	},
 	plugins: [],
