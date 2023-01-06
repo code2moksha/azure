@@ -319,7 +319,7 @@ body {
 	@apply flex flex-row flex-nowrap items-center content-center justify-center;
 }
 .azure-customer-tabs {
-	@apply w-[150px] m-3 align-middle bg-transparent hover:bg-[#eaebec];
+	@apply w-auto m-3 align-middle bg-transparent hover:bg-[#eaebec];
 }
 .azure-customer-tabs .active > button {
 	@apply bg-[#eaebec] border-b-4 border-blue-600;
