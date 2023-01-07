@@ -615,6 +615,14 @@ video {
   position: relative !important;
 }
 
+.top-0 {
+  top: 0px !important;
+}
+
+.left-0 {
+  left: 0px !important;
+}
+
 .-top-\[2px\] {
   top: -2px !important;
 }
@@ -662,6 +670,16 @@ video {
 .mx-\[6px\] {
   margin-left: 6px !important;
   margin-right: 6px !important;
+}
+
+.my-\[23px\] {
+  margin-top: 23px !important;
+  margin-bottom: 23px !important;
+}
+
+.mx-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
 }
 
 .mx-auto {
@@ -866,6 +884,10 @@ video {
   height: 1rem !important;
 }
 
+.h-screen {
+  height: 100vh !important;
+}
+
 .h-auto {
   height: auto !important;
 }
@@ -958,8 +980,8 @@ video {
   width: 13rem !important;
 }
 
-.w-\[120px\] {
-  width: 120px !important;
+.w-\[110px\] {
+  width: 110px !important;
 }
 
 .w-\[620px\] {
@@ -972,10 +994,6 @@ video {
 
 .w-60 {
   width: 15rem !important;
-}
-
-.w-\[110px\] {
-  width: 110px !important;
 }
 
 .min-w-\[230px\] {
@@ -1142,9 +1160,18 @@ video {
   border-style: solid !important;
 }
 
+.border-dashed {
+  border-style: dashed !important;
+}
+
 .border-\[\#6f9e02\] {
   --tw-border-opacity: 1 !important;
   border-color: rgb(111 158 2 / var(--tw-border-opacity)) !important;
+}
+
+.border-\[\#b8b9ba\] {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(184 185 186 / var(--tw-border-opacity)) !important;
 }
 
 .border-\[\#1a1a1f\] {
@@ -1181,6 +1208,16 @@ video {
   background-color: rgb(252 165 165 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\#f8f9fa\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -1193,16 +1230,6 @@ video {
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-\[\#f8f9fa\] {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(248 249 250 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -2871,13 +2898,13 @@ body {
     justify-content: flex-start !important;
   }
 
+  .md\:bg-inherit {
+    background-color: inherit !important;
+  }
+
   .md\:bg-yellow-300 {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(253 224 71 / var(--tw-bg-opacity)) !important;
-  }
-
-  .md\:bg-inherit {
-    background-color: inherit !important;
   }
 
   .md\:p-0 {
@@ -3036,11 +3063,6 @@ body {
   .xl\:bg-blue-500 {
     --tw-bg-opacity: 1 !important;
     background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
-  }
-
-  .xl\:bg-red-400 {
-    --tw-bg-opacity: 1 !important;
-    background-color: rgb(248 113 113 / var(--tw-bg-opacity)) !important;
   }
 
   .xl\:px-16 {
