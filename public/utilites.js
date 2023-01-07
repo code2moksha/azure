@@ -21,6 +21,7 @@ const divSearch = document.getElementById("search-form-field");
 
 const menu_button = document.getElementById("utility_button");
 const close_button = document.getElementById("close_button");
+const menu_panel = document.getElementById("utility_button_panel");
 
 const dropDown = document.getElementById("dropdown");
 const activeClassName = "active";
@@ -31,6 +32,7 @@ window.addEventListener("load", (e) => {
 	defaultTabComponent(".azure-customer-tabs-contentlist", "nhs");
 	defaultTabComponent(".customer_tab_buttons", "small_nhs");
 	close_button.style.display = "none";
+	menu_panel.style.display = "none";
 });
 
 //Small Screen navigation bar
@@ -38,15 +40,16 @@ window.addEventListener("load", (e) => {
 menu_button.addEventListener("click", (e) => {
 	menu_button.style.display = "none";
 	close_button.style.display = "inline";
+	menu_panel.style.display = "flex";
 });
 close_button.addEventListener("click", (e) => {
 	menu_button.style.display = "inline";
 	close_button.style.display = "none";
+	menu_panel.style.display = "none";
 });
 
 //Default tab and panel activation
 const defaultTabComponent = function (tab, panel) {
-	console.log(tab);
 	const defaultTab = document.querySelector(tab).firstElementChild;
 	const defaultTabPanel = document.getElementById(panel);
 
